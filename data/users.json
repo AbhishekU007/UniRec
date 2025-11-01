@@ -1,0 +1,64 @@
+{
+  "abhishekupadhyay0007@gmail.com": {
+    "email": "abhishekupadhyay0007@gmail.com",
+    "password": "$2b$12$WiKJX1M/IR1j3Ph1Zsem2.Ny6fvUaBWHZcWP0NlSt53hq5RI269Vu",
+    "name": "Abhishek Upadhyay",
+    "internal_user_id": 1,
+    "quiz_responses": {
+      "favorite_movie_genres": [
+        "Action",
+        "Animation",
+        "Fantasy",
+        "Comedy"
+      ],
+      "favorite_music_genres": [
+        "Hip Hop",
+        "Indie",
+        "Classical"
+      ],
+      "shopping_interests": [
+        "Fashion",
+        "Beauty",
+        "Food",
+        "Electronics"
+      ],
+      "learning_topics": [
+        "Programming",
+        "Data Science",
+        "Business",
+        "Music"
+      ],
+      "experience_level": "intermediate",
+      "budget_range": "low"
+    },
+    "preferences": {
+      "favorite_genres": [
+        "Action",
+        "Animation",
+        "Fantasy",
+        "Comedy"
+      ],
+      "favorite_music_genres": [
+        "Hip Hop",
+        "Indie",
+        "Classical"
+      ],
+      "shopping_categories": [
+        "Fashion",
+        "Beauty",
+        "Food",
+        "Electronics"
+      ],
+      "learning_interests": [
+        "Programming",
+        "Data Science",
+        "Business",
+        "Music"
+      ],
+      "experience_level": "intermediate",
+      "budget_range": "low"
+    },
+    "created_at": "2025-11-01T20:06:48.416670",
+    "last_login": "2025-11-01T20:10:10.767657"
+  }
+}
