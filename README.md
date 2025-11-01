@@ -216,10 +216,6 @@ Body: {"user_ids": [1, 2, 3], "n_recommendations": 10}
 5. **Ranking (Optional)**: Train LightGBM ranker on interaction data
 6. **Evaluation**: Test recommendations across domains
 
-## 🎓 Resume-Worthy Description
-
-> Built **UniRec**, an AI-driven multi-domain recommendation system that learns cross-domain user behavior to personalize content across movies, products, music, and courses. Implemented hybrid modeling (collaborative + content-based + embeddings), unified user profiling with embedding fusion, and deployed via FastAPI with a modern React frontend.
-
 ## 🛠️ Technologies Used
 
 **Backend:**
@@ -244,17 +240,6 @@ Body: {"user_ids": [1, 2, 3], "n_recommendations": 10}
 - Embedding Fusion
 - Gradient Boosting (LightGBM)
 
-## 📝 Future Enhancements
-
-- [ ] Deep Learning models (Neural Collaborative Filtering)
-- [ ] Real-time streaming recommendations
-- [ ] A/B testing framework
-- [ ] Explainable AI (recommendation reasoning)
-- [ ] User feedback loop
-- [ ] Social features (friend recommendations)
-- [ ] Mobile app
-- [ ] Docker containerization
-- [ ] Cloud deployment (AWS/GCP)
 
 ## 🤝 Contributing
 
@@ -264,17 +249,6 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## 🙏 Acknowledgments
-
-- MovieLens dataset by GroupLens Research
-- Inspired by multi-domain recommendation research
-- Built for educational and portfolio purposes
-
-## 📧 Contact
-
-**Your Name** - your.email@example.com
-
-Project Link: [https://github.com/yourusername/unirec](https://github.com/yourusername/unirec)
 
 ---
 
