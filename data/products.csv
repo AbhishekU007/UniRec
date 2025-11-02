@@ -1,0 +1,151 @@
+product_id,title,brand,category,price,rating,num_reviews,in_stock
+1,iPhone 15 Pro Max,Apple,Electronics,1199.99,3.7,1511,True
+2,Samsung Galaxy S24 Ultra,Samsung,Electronics,1299.99,3.8,1963,True
+3,"MacBook Pro 16""",Apple,Electronics,2499.99,4.6,4472,True
+4,Dell XPS 15,Dell,Electronics,1899.99,4.7,436,True
+5,Sony WH-1000XM5 Headphones,Sony,Electronics,399.99,4.0,3605,False
+6,AirPods Pro 2,Apple,Electronics,249.99,3.7,3176,False
+7,iPad Air,Apple,Electronics,599.99,3.8,4462,True
+8,Samsung Galaxy Tab S9,Samsung,Electronics,799.99,4.1,4410,True
+9,PlayStation 5,Sony,Electronics,499.99,4.7,389,False
+10,Xbox Series X,Microsoft,Electronics,499.99,4.7,2256,True
+11,Nintendo Switch OLED,Nintendo,Electronics,349.99,4.4,2370,True
+12,"LG OLED TV 65""",LG,Electronics,2199.99,3.5,3053,False
+13,Sony Bravia 4K TV,Sony,Electronics,1299.99,3.8,3449,False
+14,Canon EOS R6,Canon,Electronics,2499.99,3.8,3036,False
+15,GoPro Hero 12,GoPro,Electronics,399.99,3.7,3021,False
+16,Nike Air Max 270,Nike,Fashion,150.0,3.7,1770,False
+17,Adidas Ultraboost,Adidas,Fashion,180.0,3.5,870,True
+18,Levi's 501 Jeans,Levi's,Fashion,98.0,4.0,4496,True
+19,Ray-Ban Aviator Sunglasses,Ray-Ban,Fashion,153.0,5.0,4534,True
+20,Gucci Belt,Gucci,Fashion,450.0,3.6,3611,True
+21,North Face Jacket,The North Face,Fashion,299.0,3.9,3277,True
+22,Patagonia Fleece,Patagonia,Fashion,149.0,4.4,1637,True
+23,Timberland Boots,Timberland,Fashion,198.0,3.5,4153,False
+24,Vans Old Skool,Vans,Fashion,65.0,3.8,3300,True
+25,Converse Chuck Taylor,Converse,Fashion,60.0,4.4,4239,False
+26,Tommy Hilfiger Polo,Tommy Hilfiger,Fashion,79.0,4.0,2522,True
+27,Ralph Lauren Sweater,Ralph Lauren,Fashion,145.0,3.8,1300,True
+28,Carhartt Workwear,Carhartt,Fashion,89.0,4.7,2576,True
+29,Columbia Hiking Pants,Columbia,Fashion,75.0,4.7,4292,True
+30,Under Armour Sports Bra,Under Armour,Fashion,49.99,3.7,2777,False
+31,Atomic Habits,James Clear,Books,16.99,4.1,4869,True
+32,The Psychology of Money,Morgan Housel,Books,14.99,4.3,1675,False
+33,Sapiens,Yuval Noah Harari,Books,17.99,3.7,938,True
+34,Educated,Tara Westover,Books,15.99,4.3,3548,False
+35,Thinking Fast and Slow,Daniel Kahneman,Books,18.99,3.9,3903,True
+36,The Alchemist,Paulo Coelho,Books,14.99,4.3,4592,True
+37,1984,George Orwell,Books,13.99,4.5,849,True
+38,To Kill a Mockingbird,Harper Lee,Books,12.99,4.5,1986,True
+39,Harry Potter Box Set,J.K. Rowling,Books,65.0,4.0,2367,True
+40,Lord of the Rings,J.R.R. Tolkien,Books,35.0,3.8,4399,True
+41,The Great Gatsby,F. Scott Fitzgerald,Books,10.99,3.8,2500,False
+42,Pride and Prejudice,Jane Austen,Books,9.99,4.8,731,True
+43,The Subtle Art of Not Giving a F*ck,Mark Manson,Books,14.99,3.6,3118,True
+44,Becoming,Michelle Obama,Books,19.99,4.4,3887,True
+45,Can't Hurt Me,David Goggins,Books,16.99,3.8,2118,True
+46,Dyson V15 Vacuum,Dyson,Home & Garden,649.99,3.7,1295,True
+47,Instant Pot Duo,Instant Pot,Home & Garden,99.99,3.7,1445,True
+48,KitchenAid Stand Mixer,KitchenAid,Home & Garden,379.99,4.1,1042,True
+49,Ninja Air Fryer,Ninja,Home & Garden,129.99,4.1,2370,True
+50,Keurig Coffee Maker,Keurig,Home & Garden,139.99,4.5,3437,True
+51,iRobot Roomba,iRobot,Home & Garden,599.99,3.8,3409,False
+52,Philips Hue Lights,Philips,Home & Garden,199.99,3.7,4137,True
+53,Nest Thermostat,Google,Home & Garden,129.99,4.4,3182,True
+54,Ring Video Doorbell,Ring,Home & Garden,99.99,3.6,3337,True
+55,Anova Sous Vide,Anova,Home & Garden,199.0,4.2,132,False
+56,Le Creuset Dutch Oven,Le Creuset,Home & Garden,349.95,4.2,4968,True
+57,Vitamix Blender,Vitamix,Home & Garden,449.99,4.4,1509,True
+58,Shark Steam Mop,Shark,Home & Garden,99.99,3.6,1164,True
+59,Crock-Pot Slow Cooker,Crock-Pot,Home & Garden,49.99,4.8,3217,False
+60,Weber Grill,Weber,Home & Garden,499.0,3.8,354,True
+61,Peloton Bike,Peloton,Sports,1445.0,3.6,4731,False
+62,Bowflex Dumbbells,Bowflex,Sports,549.0,3.5,635,True
+63,Yeti Cooler 45,Yeti,Sports,325.0,5.0,3667,False
+64,Hydro Flask Water Bottle,Hydro Flask,Sports,44.95,4.5,998,False
+65,Fitbit Charge 6,Fitbit,Sports,159.95,3.8,1215,True
+66,Garmin Forerunner 945,Garmin,Sports,599.99,3.8,4120,True
+67,Wilson Football,Wilson,Sports,29.99,3.8,296,True
+68,Spalding Basketball,Spalding,Sports,49.99,4.4,4051,True
+69,Callaway Golf Clubs,Callaway,Sports,1299.99,4.5,823,True
+70,TaylorMade Driver,TaylorMade,Sports,599.99,4.8,1884,True
+71,Trek Mountain Bike,Trek,Sports,1899.0,4.1,427,True
+72,Specialized Road Bike,Specialized,Sports,2499.0,4.3,1660,False
+73,Bose Sport Earbuds,Bose,Sports,179.0,3.9,3172,True
+74,Adidas Soccer Ball,Adidas,Sports,39.99,4.2,2545,True
+75,Easton Baseball Bat,Easton,Sports,299.99,3.6,3376,True
+76,Dyson Airwrap,Dyson,Beauty,599.99,3.6,932,True
+77,Fenty Beauty Foundation,Fenty,Beauty,39.0,4.9,2558,True
+78,MAC Lipstick,MAC,Beauty,19.0,4.1,2430,True
+79,Urban Decay Eyeshadow Palette,Urban Decay,Beauty,54.0,5.0,3835,False
+80,Clinique Moisturizer,Clinique,Beauty,38.5,4.8,4503,True
+81,The Ordinary Skincare Set,The Ordinary,Beauty,45.0,3.9,2073,True
+82,Glossier Boy Brow,Glossier,Beauty,18.0,3.8,768,False
+83,Olaplex Hair Treatment,Olaplex,Beauty,28.0,5.0,2233,True
+84,Anastasia Beverly Hills Brow Kit,Anastasia,Beauty,29.0,4.5,3955,True
+85,Tatcha Water Cream,Tatcha,Beauty,68.0,3.7,1273,True
+86,Charlotte Tilbury Pillow Talk,Charlotte Tilbury,Beauty,34.0,4.7,889,True
+87,La Mer Face Cream,La Mer,Beauty,345.0,4.2,2630,True
+88,Drunk Elephant Vitamin C,Drunk Elephant,Beauty,80.0,4.7,798,False
+89,Bioderma Micellar Water,Bioderma,Beauty,14.99,4.0,2111,True
+90,CeraVe Daily Moisturizer,CeraVe,Beauty,16.99,4.6,3577,True
+91,LEGO Star Wars Millennium Falcon,LEGO,Toys,169.99,4.2,4309,True
+92,LEGO Technic Bugatti,LEGO,Toys,379.99,4.9,2400,True
+93,Barbie Dream House,Mattel,Toys,199.99,4.1,2509,False
+94,Hot Wheels Track Set,Mattel,Toys,49.99,3.7,3107,True
+95,Nerf N-Strike Elite,Nerf,Toys,39.99,5.0,3575,True
+96,Play-Doh Super Set,Play-Doh,Toys,24.99,4.5,3117,True
+97,Fisher-Price Baby Toys,Fisher-Price,Toys,29.99,4.1,2891,True
+98,Monopoly Board Game,Hasbro,Toys,19.99,3.8,4341,True
+99,Jenga Classic,Hasbro,Toys,14.99,4.0,3537,True
+100,Uno Card Game,Mattel,Toys,9.99,4.8,304,False
+101,Rubik's Cube,Rubik's,Toys,12.99,4.3,1948,True
+102,Melissa & Doug Puzzles,Melissa & Doug,Toys,19.99,4.6,1594,True
+103,Disney Princess Doll,Disney,Toys,24.99,4.9,2906,True
+104,Marvel Action Figures,Hasbro,Toys,34.99,3.9,802,True
+105,Nintendo Mario Kart RC,Nintendo,Toys,79.99,4.8,400,False
+106,Starbucks Coffee Beans,Starbucks,Food,12.99,4.6,3303,False
+107,Nutella Hazelnut Spread,Nutella,Food,7.99,3.6,815,True
+108,KIND Protein Bars,KIND,Food,18.99,3.7,3091,False
+109,Clif Energy Bars,Clif,Food,14.99,3.8,4106,True
+110,La Croix Sparkling Water,La Croix,Food,5.99,3.5,3943,True
+111,Ghirardelli Chocolate,Ghirardelli,Food,9.99,3.8,1531,True
+112,Blue Diamond Almonds,Blue Diamond,Food,6.99,3.6,998,True
+113,Nature Valley Granola,Nature Valley,Food,8.99,4.7,1563,False
+114,Pringles Chips,Pringles,Food,2.99,4.4,2589,True
+115,Oreo Cookies,Oreo,Food,4.99,4.1,4207,True
+116,Ben & Jerry's Ice Cream,Ben & Jerry's,Food,5.99,4.2,2391,True
+117,Kellogg's Cereal,Kellogg's,Food,4.49,4.4,4387,False
+118,Annie's Mac & Cheese,Annie's,Food,3.99,4.0,4595,True
+119,Heinz Ketchup,Heinz,Food,3.49,4.5,4585,True
+120,Sriracha Hot Sauce,Huy Fong,Food,4.99,4.3,1580,True
+121,Optimum Nutrition Whey Protein,Optimum Nutrition,Health,59.99,4.6,2701,True
+122,Nature Made Multivitamins,Nature Made,Health,24.99,4.9,218,True
+123,Emergen-C Vitamin C,Emergen-C,Health,14.99,4.4,3634,True
+124,Braun Thermometer,Braun,Health,39.99,4.7,4065,True
+125,Omron Blood Pressure Monitor,Omron,Health,79.99,3.8,4965,True
+126,AccuChek Glucose Meter,AccuChek,Health,29.99,4.2,2935,True
+127,Advil Pain Relief,Advil,Health,12.99,3.7,1547,True
+128,Tylenol Extra Strength,Tylenol,Health,14.99,4.7,4149,False
+129,Claritin Allergy Relief,Claritin,Health,29.99,4.5,4326,True
+130,Zyrtec Antihistamine,Zyrtec,Health,24.99,4.3,4604,True
+131,Neosporin First Aid,Neosporin,Health,8.99,4.5,842,True
+132,Band-Aid Bandages,Band-Aid,Health,6.99,4.5,1174,True
+133,Theragun Massage Gun,Theragun,Health,299.0,4.5,852,True
+134,Withings Smart Scale,Withings,Health,99.95,3.6,2938,False
+135,Pure Enrichment Humidifier,Pure Enrichment,Health,49.99,3.8,4857,True
+136,Michelin Tires Set,Michelin,Automotive,699.99,4.3,437,False
+137,Bosch Wiper Blades,Bosch,Automotive,29.99,4.0,4176,False
+138,Garmin GPS Navigator,Garmin,Automotive,199.99,4.5,2457,True
+139,Armor All Car Wax,Armor All,Automotive,12.99,4.5,1297,True
+140,Meguiar's Car Polish,Meguiar's,Automotive,19.99,3.8,4192,True
+141,Chemical Guys Wash Kit,Chemical Guys,Automotive,49.99,3.7,1664,True
+142,WeatherTech Floor Mats,WeatherTech,Automotive,139.99,4.3,2101,True
+143,Thule Roof Rack,Thule,Automotive,399.99,4.7,421,True
+144,Anker Car Charger,Anker,Automotive,24.99,4.4,4696,True
+145,Nextbase Dash Cam,Nextbase,Automotive,179.99,4.1,2544,True
+146,Optima Car Battery,Optima,Automotive,249.99,3.6,1751,False
+147,K&N Air Filter,K&N,Automotive,59.99,3.7,1830,False
+148,Rain-X Windshield Treatment,Rain-X,Automotive,7.99,4.1,1062,True
+149,Craftsman Tool Set,Craftsman,Automotive,199.99,4.4,4706,True
+150,Black+Decker Jump Starter,Black+Decker,Automotive,79.99,3.8,4923,False

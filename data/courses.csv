@@ -1,0 +1,151 @@
+course_id,title,instructor,category,subcategory,difficulty,duration,rating,num_students,price
+1,Complete Python Bootcamp,Jose Portilla,Programming,Programming,Beginner,19,4.2,5434,149.99
+2,The Web Developer Bootcamp,Colt Steele,Programming,Programming,Beginner,19,4.6,36442,79.99
+3,JavaScript: Understanding the Weird Parts,Anthony Alicea,Programming,Programming,Intermediate,15,4.6,22362,29.99
+4,React - The Complete Guide,Maximilian Schwarzmüller,Programming,Programming,Intermediate,18,4.8,19636,149.99
+5,Node.js The Complete Guide,Maximilian Schwarzmüller,Programming,Programming,Intermediate,16,4.8,62136,49.99
+6,iOS App Development,Angela Yu,Programming,Programming,Beginner,21,4.5,47081,19.99
+7,Android Java Masterclass,Tim Buchalka,Programming,Programming,Intermediate,45,4.9,73035,79.99
+8,Complete C# Unity Game Developer,Ben Tristem,Programming,Programming,Beginner,44,4.5,42446,79.99
+9,Machine Learning A-Z,Kirill Eremenko,Programming,Programming,Advanced,17,4.9,83135,79.99
+10,Complete SQL Bootcamp,Jose Portilla,Programming,Programming,Beginner,44,4.0,7409,19.99
+11,Docker Mastery,Bret Fisher,Programming,Programming,Intermediate,25,4.2,58415,149.99
+12,AWS Certified Solutions Architect,Ryan Kroonenburg,Programming,Programming,Advanced,22,4.2,41379,99.99
+13,Git Complete,Jason Taylor,Programming,Programming,Beginner,6,4.7,3499,29.99
+14,Python for Data Science,Jose Portilla,Programming,Programming,Intermediate,47,4.4,40052,49.99
+15,Full Stack Web Development,Rob Percival,Programming,Programming,Intermediate,23,4.4,81550,99.99
+16,An Entire MBA in 1 Course,Chris Haroun,Business,Business,Intermediate,42,4.9,67974,149.99
+17,Business Strategy,Mike Figliuolo,Business,Business,Advanced,13,4.6,50014,29.99
+18,Project Management Professional,Joseph Phillips,Business,Business,Intermediate,34,4.9,33569,29.99
+19,The Complete Management Course,Chris Croft,Business,Business,Beginner,29,4.4,92416,29.99
+20,Startup Launch Formula,Steve Blank,Business,Business,Intermediate,17,4.2,55531,29.99
+21,Business Analytics,Kirill Eremenko,Business,Business,Intermediate,34,5.0,45251,49.99
+22,Supply Chain Management,Dr. Paul Myerson,Business,Business,Intermediate,42,4.1,77124,99.99
+23,Agile Project Management,Jeremy Jarrell,Business,Business,Intermediate,50,4.7,48250,49.99
+24,Leadership Skills Masterclass,Robin Hills,Business,Business,Beginner,17,4.7,82001,149.99
+25,Negotiation Skills,Chris Croft,Business,Business,Intermediate,20,4.9,82284,149.99
+26,Productivity Masterclass,Ali Abdaal,Business,Business,Beginner,37,4.4,92258,79.99
+27,Six Sigma Green Belt,Paul Allen,Business,Business,Advanced,31,4.9,6949,49.99
+28,Business Model Canvas,Alexander Osterwalder,Business,Business,Intermediate,44,4.2,90607,149.99
+29,Strategic Planning,Michael Porter,Business,Business,Advanced,8,4.8,40816,79.99
+30,Financial Modeling,Simon Benninga,Business,Business,Advanced,17,4.6,91942,49.99
+31,Graphic Design Masterclass,Lindsay Marsh,Design,Design,Beginner,19,4.6,57344,99.99
+32,Adobe Photoshop CC Essentials,Daniel Walter Scott,Design,Design,Beginner,5,4.4,83787,99.99
+33,Adobe Illustrator CC Masterclass,Daniel Walter Scott,Design,Design,Intermediate,45,5.0,54253,79.99
+34,UI/UX Design Specialization,Caleb Atwell,Design,Design,Intermediate,18,4.7,18102,149.99
+35,Figma UI Design,Daniel Walter Scott,Design,Design,Beginner,42,4.9,63565,29.99
+36,Web Design for Beginners,Brad Schiff,Design,Design,Beginner,40,4.1,16224,49.99
+37,Logo Design Masterclass,Lindsay Marsh,Design,Design,Intermediate,19,4.7,77690,79.99
+38,Blender 3D Modeling,Grant Abbitt,Design,Design,Intermediate,14,4.2,51125,29.99
+39,After Effects CC Masterclass,Phil Ebiner,Design,Design,Intermediate,14,4.3,87248,49.99
+40,InDesign CC Mastery,Daniel Walter Scott,Design,Design,Intermediate,43,4.3,40163,29.99
+41,Design Thinking,David Kelley,Design,Design,Beginner,23,4.6,83265,99.99
+42,Color Theory Masterclass,Lindsay Marsh,Design,Design,Beginner,46,4.5,17349,29.99
+43,Typography Fundamentals,Laura Franz,Design,Design,Beginner,28,4.5,40466,29.99
+44,User Experience Design,Don Norman,Design,Design,Intermediate,15,4.4,23932,79.99
+45,Sketch App Masterclass,Marc Andrew,Design,Design,Intermediate,40,4.7,58945,149.99
+46,Digital Marketing Masterclass,Phil Ebiner,Marketing,Marketing,Beginner,32,4.8,20016,29.99
+47,The Complete SEO Course,Neil Patel,Marketing,Marketing,Intermediate,27,4.5,99621,99.99
+48,Facebook Ads & Marketing,Isaac Rudansky,Marketing,Marketing,Intermediate,24,4.4,57978,99.99
+49,Google Ads Training,Isaac Rudansky,Marketing,Marketing,Intermediate,47,4.2,54991,99.99
+50,Email Marketing Masterclass,Andre Chaperon,Marketing,Marketing,Intermediate,5,4.6,67288,79.99
+51,Social Media Marketing,Jay Baer,Marketing,Marketing,Beginner,40,4.2,59526,99.99
+52,Content Marketing Strategy,Joe Pulizzi,Marketing,Marketing,Intermediate,27,4.5,37085,19.99
+53,Instagram Marketing,Justin O'Brien,Marketing,Marketing,Beginner,35,4.8,93554,99.99
+54,YouTube Marketing,Brian Dean,Marketing,Marketing,Intermediate,12,4.3,18347,79.99
+55,Copywriting Secrets,Jim Edwards,Marketing,Marketing,Intermediate,20,4.4,61081,49.99
+56,Marketing Analytics,Avinash Kaushik,Marketing,Marketing,Advanced,45,4.6,5336,19.99
+57,Brand Strategy Masterclass,Marty Neumeier,Marketing,Marketing,Intermediate,40,4.2,72136,79.99
+58,Growth Hacking,Sean Ellis,Marketing,Marketing,Advanced,47,4.0,8101,79.99
+59,Conversion Rate Optimization,Peep Laja,Marketing,Marketing,Advanced,6,4.1,99292,149.99
+60,Influencer Marketing,Shane Barker,Marketing,Marketing,Intermediate,17,4.2,45334,49.99
+61,Data Science A-Z,Kirill Eremenko,Data Science,Data Science,Beginner,45,4.3,48002,99.99
+62,Machine Learning with Python,Andrew Ng,Data Science,Data Science,Intermediate,31,4.9,70910,19.99
+63,Deep Learning Specialization,Andrew Ng,Data Science,Data Science,Advanced,50,4.9,40218,29.99
+64,Data Analysis with Python,Jose Portilla,Data Science,Data Science,Intermediate,43,4.8,2876,79.99
+65,Statistics for Data Science,Josh Starmer,Data Science,Data Science,Intermediate,12,4.3,72390,99.99
+66,R Programming A-Z,Kirill Eremenko,Data Science,Data Science,Beginner,15,4.6,47998,49.99
+67,SQL for Data Analysis,Mode Analytics,Data Science,Data Science,Beginner,17,4.1,80423,99.99
+68,Tableau Masterclass,Kirill Eremenko,Data Science,Data Science,Intermediate,14,5.0,78436,29.99
+69,Power BI Complete Course,Maven Analytics,Data Science,Data Science,Intermediate,11,4.7,50666,79.99
+70,Big Data and Hadoop,Frank Kane,Data Science,Data Science,Advanced,45,4.9,13476,149.99
+71,Natural Language Processing,Lazy Programmer,Data Science,Data Science,Advanced,42,4.5,85416,149.99
+72,Computer Vision A-Z,Hadelin de Ponteves,Data Science,Data Science,Advanced,17,4.6,39363,29.99
+73,Time Series Analysis,Rob J Hyndman,Data Science,Data Science,Advanced,44,4.4,91792,29.99
+74,A/B Testing Masterclass,Kirill Eremenko,Data Science,Data Science,Intermediate,34,4.5,29075,149.99
+75,Data Engineering,Frank Kane,Data Science,Data Science,Advanced,32,4.4,47243,99.99
+76,Complete Spanish Course,Maria Fernandez,Languages,Languages,Beginner,34,4.0,71604,79.99
+77,French for Beginners,Pierre Dubois,Languages,Languages,Beginner,24,4.4,35275,79.99
+78,Complete German Course,Hans Mueller,Languages,Languages,Beginner,45,4.6,52732,49.99
+79,Mandarin Chinese Complete,Li Wei,Languages,Languages,Beginner,26,4.2,54076,79.99
+80,Japanese for Beginners,Yuki Tanaka,Languages,Languages,Beginner,24,4.5,76054,99.99
+81,Italian Language Masterclass,Marco Rossi,Languages,Languages,Beginner,13,4.8,88180,29.99
+82,Portuguese Complete Course,João Silva,Languages,Languages,Beginner,40,4.5,8378,29.99
+83,Korean Language Course,Min-Ji Kim,Languages,Languages,Beginner,50,4.3,89864,19.99
+84,Arabic for Beginners,Ahmed Hassan,Languages,Languages,Beginner,37,4.1,11333,79.99
+85,Russian Complete Course,Natasha Ivanova,Languages,Languages,Beginner,47,4.0,16977,99.99
+86,English Grammar Masterclass,Emma Watson,Languages,Languages,Intermediate,29,4.1,83680,29.99
+87,Business English,Rachel Green,Languages,Languages,Intermediate,10,4.6,83191,29.99
+88,IELTS Preparation,Simon Corcoran,Languages,Languages,Advanced,25,4.8,1332,99.99
+89,TOEFL Mastery,Magoosh Test Prep,Languages,Languages,Advanced,33,4.7,99402,149.99
+90,Latin Fundamentals,Professor Williams,Languages,Languages,Intermediate,27,4.9,91503,29.99
+91,Complete Piano Course,Manus Pianoforte,Music,Music,Beginner,8,4.9,27776,79.99
+92,Guitar Lessons Masterclass,Erich Andreas,Music,Music,Beginner,20,4.2,49104,49.99
+93,Music Theory Complete,Jason Allen,Music,Music,Beginner,42,4.2,18971,79.99
+94,Electronic Music Production,Ableton Instructor,Music,Music,Intermediate,7,4.6,9921,149.99
+95,FL Studio Complete Course,SeamlessR,Music,Music,Intermediate,44,4.4,26527,19.99
+96,Singing Masterclass,Katarina Benzova,Music,Music,Beginner,6,4.9,1686,19.99
+97,Drum Lessons for Beginners,Mike Johnston,Music,Music,Beginner,44,4.5,47933,79.99
+98,Ukulele for Absolute Beginners,Brett McQueen,Music,Music,Beginner,24,4.6,84435,79.99
+99,Violin Lessons,Professor V,Music,Music,Beginner,31,4.1,28115,49.99
+100,Music Composition,Jason Allen,Music,Music,Intermediate,49,5.0,18136,29.99
+101,Audio Engineering Complete,Recording Revolution,Music,Music,Intermediate,42,4.4,81435,49.99
+102,DJ Mixing Masterclass,DJ Carlo Atendido,Music,Music,Intermediate,11,4.8,74908,149.99
+103,Songwriting Secrets,Ed Sheeran Masterclass,Music,Music,Intermediate,27,4.4,89880,99.99
+104,Blues Guitar Unleashed,Griff Hamlin,Music,Music,Intermediate,47,4.6,19721,149.99
+105,Jazz Piano Complete,Willie Myette,Music,Music,Advanced,31,4.1,25035,19.99
+106,Photography Masterclass,Phil Ebiner,Photography,Photography,Beginner,6,4.4,64337,19.99
+107,Smartphone Photography,Dale McManus,Photography,Photography,Beginner,16,4.7,97266,19.99
+108,Portrait Photography,Daniel Inskeep,Photography,Photography,Intermediate,37,4.5,35336,49.99
+109,Landscape Photography,Chris Burkard,Photography,Photography,Intermediate,47,4.0,37202,19.99
+110,Wedding Photography,Vanessa Joy,Photography,Photography,Advanced,20,4.6,29362,79.99
+111,Adobe Lightroom Complete,Phil Ebiner,Photography,Photography,Intermediate,50,4.0,71278,49.99
+112,Food Photography,Christina Peters,Photography,Photography,Intermediate,33,4.4,66377,19.99
+113,Product Photography,Jordi Koalitic,Photography,Photography,Intermediate,38,4.3,28273,29.99
+114,Street Photography,Sean Tucker,Photography,Photography,Intermediate,15,4.2,69389,79.99
+115,Real Estate Photography,Nathan Cool,Photography,Photography,Intermediate,38,4.7,35484,29.99
+116,Night Photography,Lance Keimig,Photography,Photography,Advanced,20,4.5,12133,29.99
+117,Drone Photography,Ryan White,Photography,Photography,Intermediate,10,4.7,49331,19.99
+118,Black and White Photography,Ansel Adams Course,Photography,Photography,Advanced,14,4.5,7761,19.99
+119,Fashion Photography,Clay Cook,Photography,Photography,Advanced,43,4.8,35984,49.99
+120,Wildlife Photography,Paul Nicklen,Photography,Photography,Advanced,47,4.7,17036,19.99
+121,Financial Markets,Robert Shiller,Finance,Finance,Beginner,40,4.7,54162,79.99
+122,Personal Finance Complete,Chris Haroun,Finance,Finance,Beginner,7,4.5,99413,19.99
+123,Stock Trading Complete,Mohsen Hassan,Finance,Finance,Intermediate,31,4.3,87859,149.99
+124,Cryptocurrency Investment,Andrei Jikh,Finance,Finance,Intermediate,31,4.1,29561,29.99
+125,Real Estate Investing,BiggerPockets,Finance,Finance,Intermediate,26,4.5,14341,49.99
+126,Accounting & Bookkeeping,Vincenzo Ciaglia,Finance,Finance,Beginner,22,4.8,54576,79.99
+127,Financial Modeling for Investment Banking,Careers in Finance,Finance,Finance,Advanced,35,4.1,2132,99.99
+128,Options Trading,Karen the Trader,Finance,Finance,Advanced,23,4.7,91791,79.99
+129,Forex Trading,Adam Khoo,Finance,Finance,Intermediate,42,4.1,9219,29.99
+130,Financial Analysis,Chris Haroun,Finance,Finance,Intermediate,43,4.4,24891,79.99
+131,QuickBooks Complete Course,Hector Garcia,Finance,Finance,Beginner,35,4.2,61095,19.99
+132,Excel for Finance,Simon Sez IT,Finance,Finance,Intermediate,40,4.6,54093,19.99
+133,Investment Banking,Vikram Barhat,Finance,Finance,Advanced,10,4.6,33267,149.99
+134,Retirement Planning,Bob Carlson,Finance,Finance,Intermediate,13,4.6,7339,49.99
+135,Tax Preparation,Robert Farrington,Finance,Finance,Intermediate,31,4.2,87257,29.99
+136,Yoga for Beginners,Adriene Mishler,Health,Health,Beginner,36,4.8,88431,99.99
+137,Complete Meditation Course,Giovanni Dienstmann,Health,Health,Beginner,22,4.9,69198,49.99
+138,Nutrition Complete Guide,Felix Harder,Health,Health,Beginner,36,4.7,41839,79.99
+139,Weight Training for Beginners,Athlean-X,Health,Health,Beginner,26,4.0,88141,19.99
+140,Running & Marathon Training,Hal Higdon,Health,Health,Intermediate,33,4.1,87952,79.99
+141,Mental Health & Wellbeing,Dr. Andrea Pennington,Health,Health,Beginner,23,5.0,9032,49.99
+142,Sleep Science,Dr. Matthew Walker,Health,Health,Beginner,48,5.0,71286,19.99
+143,Mindfulness Based Stress Reduction,Jon Kabat-Zinn,Health,Health,Beginner,50,4.2,4568,29.99
+144,Healthy Cooking,Gordon Ramsay,Health,Health,Beginner,45,4.2,29987,149.99
+145,CrossFit Training,Ben Bergeron,Health,Health,Intermediate,23,4.9,93063,49.99
+146,Pilates Complete,Cassey Ho,Health,Health,Beginner,45,4.6,62799,19.99
+147,Sports Psychology,Dr. Jim Taylor,Health,Health,Intermediate,25,4.1,98058,99.99
+148,First Aid & CPR,Red Cross,Health,Health,Beginner,19,4.5,53291,19.99
+149,Supplements Guide,Examine.com,Health,Health,Intermediate,48,4.5,16214,19.99
+150,Keto Diet Complete,Dr. Berg,Health,Health,Beginner,20,4.4,15866,149.99

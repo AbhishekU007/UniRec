@@ -1,0 +1,503 @@
+track_id,title,artist,album,genre,duration,year
+1,Shake It Off,Taylor Swift,Taylor Swift - Album 1,Pop,343,1974
+2,Blank Space,Taylor Swift,Taylor Swift - Album 4,Pop,250,1991
+3,Love Story,Taylor Swift,Taylor Swift - Album 9,Pop,215,1973
+4,You Belong With Me,Taylor Swift,Taylor Swift - Album 1,Pop,202,2014
+5,Anti-Hero,Taylor Swift,Taylor Swift - Album 4,Pop,187,1971
+6,Cruel Summer,Taylor Swift,Taylor Swift - Album 10,Pop,239,2024
+7,Cardigan,Taylor Swift,Taylor Swift - Album 9,Pop,186,1985
+8,Willow,Taylor Swift,Taylor Swift - Album 8,Pop,287,1988
+9,Bad Blood,Taylor Swift,Taylor Swift - Album 1,Pop,330,1995
+10,Style,Taylor Swift,Taylor Swift - Album 6,Pop,220,2014
+11,22,Taylor Swift,Taylor Swift - Album 4,Pop,251,1979
+12,We Are Never Getting Back Together,Taylor Swift,Taylor Swift - Album 2,Pop,266,1973
+13,Thank U Next,Ariana Grande,Ariana Grande - Album 6,Pop,277,1972
+14,7 Rings,Ariana Grande,Ariana Grande - Album 1,Pop,268,1993
+15,Problem,Ariana Grande,Ariana Grande - Album 7,Pop,297,1975
+16,Side To Side,Ariana Grande,Ariana Grande - Album 10,Pop,200,1997
+17,Break Free,Ariana Grande,Ariana Grande - Album 2,Pop,272,1984
+18,God Is A Woman,Ariana Grande,Ariana Grande - Album 5,Pop,191,1989
+19,Positions,Ariana Grande,Ariana Grande - Album 2,Pop,200,1989
+20,Into You,Ariana Grande,Ariana Grande - Album 8,Pop,277,1995
+21,Dangerous Woman,Ariana Grande,Ariana Grande - Album 3,Pop,342,2006
+22,No Tears Left To Cry,Ariana Grande,Ariana Grande - Album 4,Pop,274,2005
+23,Shape of You,Ed Sheeran,Ed Sheeran - Album 2,Pop,351,1994
+24,Perfect,Ed Sheeran,Ed Sheeran - Album 9,Pop,335,1981
+25,Thinking Out Loud,Ed Sheeran,Ed Sheeran - Album 8,Pop,242,1980
+26,Photograph,Ed Sheeran,Ed Sheeran - Album 9,Pop,277,1994
+27,Castle on the Hill,Ed Sheeran,Ed Sheeran - Album 1,Pop,236,2001
+28,Galway Girl,Ed Sheeran,Ed Sheeran - Album 6,Pop,238,1964
+29,Bad Habits,Ed Sheeran,Ed Sheeran - Album 2,Pop,282,1994
+30,Shivers,Ed Sheeran,Ed Sheeran - Album 4,Pop,234,2000
+31,Happier,Ed Sheeran,Ed Sheeran - Album 7,Pop,347,2023
+32,Lego House,Ed Sheeran,Ed Sheeran - Album 3,Pop,344,2018
+33,Levitating,Dua Lipa,Dua Lipa - Album 4,Pop,247,1977
+34,Don't Start Now,Dua Lipa,Dua Lipa - Album 10,Pop,323,1993
+35,New Rules,Dua Lipa,Dua Lipa - Album 6,Pop,289,2011
+36,One Kiss,Dua Lipa,Dua Lipa - Album 9,Pop,236,1977
+37,Physical,Dua Lipa,Dua Lipa - Album 1,Pop,306,1971
+38,Break My Heart,Dua Lipa,Dua Lipa - Album 3,Pop,208,1979
+39,IDGAF,Dua Lipa,Dua Lipa - Album 10,Pop,354,2014
+40,Be The One,Dua Lipa,Dua Lipa - Album 7,Pop,196,2009
+41,Hotter Than Hell,Dua Lipa,Dua Lipa - Album 9,Pop,332,2019
+42,Blow Your Mind,Dua Lipa,Dua Lipa - Album 2,Pop,244,1961
+43,Blinding Lights,The Weeknd,The Weeknd - Album 6,Pop,354,1994
+44,Starboy,The Weeknd,The Weeknd - Album 7,Pop,208,1997
+45,The Hills,The Weeknd,The Weeknd - Album 1,Pop,220,2018
+46,Can't Feel My Face,The Weeknd,The Weeknd - Album 3,Pop,247,2024
+47,Save Your Tears,The Weeknd,The Weeknd - Album 5,Pop,309,1973
+48,I Feel It Coming,The Weeknd,The Weeknd - Album 10,Pop,343,2024
+49,Heartless,The Weeknd,The Weeknd - Album 6,Pop,230,1979
+50,Die For You,The Weeknd,The Weeknd - Album 10,Pop,221,1960
+51,Earned It,The Weeknd,The Weeknd - Album 1,Pop,262,2022
+52,Call Out My Name,The Weeknd,The Weeknd - Album 5,Pop,208,2006
+53,Bohemian Rhapsody,Queen,Queen - Album 4,Rock,241,1967
+54,We Will Rock You,Queen,Queen - Album 2,Rock,325,1970
+55,We Are The Champions,Queen,Queen - Album 9,Rock,304,1968
+56,Don't Stop Me Now,Queen,Queen - Album 8,Rock,212,1976
+57,Another One Bites The Dust,Queen,Queen - Album 5,Rock,320,1981
+58,Somebody To Love,Queen,Queen - Album 4,Rock,315,2014
+59,Under Pressure,Queen,Queen - Album 5,Rock,318,1985
+60,Radio Ga Ga,Queen,Queen - Album 8,Rock,282,2007
+61,I Want To Break Free,Queen,Queen - Album 2,Rock,312,2017
+62,Killer Queen,Queen,Queen - Album 2,Rock,243,1988
+63,Hey Jude,The Beatles,The Beatles - Album 10,Rock,266,1962
+64,Let It Be,The Beatles,The Beatles - Album 10,Rock,321,1989
+65,Yesterday,The Beatles,The Beatles - Album 2,Rock,236,1960
+66,Come Together,The Beatles,The Beatles - Album 4,Rock,341,1967
+67,Here Comes The Sun,The Beatles,The Beatles - Album 6,Rock,197,1964
+68,A Hard Day's Night,The Beatles,The Beatles - Album 5,Rock,198,1990
+69,Help!,The Beatles,The Beatles - Album 4,Rock,351,2022
+70,All You Need Is Love,The Beatles,The Beatles - Album 10,Rock,318,1976
+71,Twist And Shout,The Beatles,The Beatles - Album 4,Rock,327,2020
+72,Get Back,The Beatles,The Beatles - Album 4,Rock,301,2012
+73,Stairway to Heaven,Led Zeppelin,Led Zeppelin - Album 7,Rock,204,1972
+74,Whole Lotta Love,Led Zeppelin,Led Zeppelin - Album 7,Rock,270,2014
+75,Kashmir,Led Zeppelin,Led Zeppelin - Album 2,Rock,299,1966
+76,Black Dog,Led Zeppelin,Led Zeppelin - Album 6,Rock,195,2011
+77,Rock and Roll,Led Zeppelin,Led Zeppelin - Album 4,Rock,207,1991
+78,Immigrant Song,Led Zeppelin,Led Zeppelin - Album 3,Rock,228,2017
+79,Ramble On,Led Zeppelin,Led Zeppelin - Album 5,Rock,288,1983
+80,Good Times Bad Times,Led Zeppelin,Led Zeppelin - Album 2,Rock,298,1991
+81,Dazed and Confused,Led Zeppelin,Led Zeppelin - Album 1,Rock,293,1972
+82,When the Levee Breaks,Led Zeppelin,Led Zeppelin - Album 2,Rock,346,1961
+83,Radioactive,Imagine Dragons,Imagine Dragons - Album 7,Rock,240,1981
+84,Demons,Imagine Dragons,Imagine Dragons - Album 4,Rock,304,2021
+85,Believer,Imagine Dragons,Imagine Dragons - Album 3,Rock,282,1967
+86,Thunder,Imagine Dragons,Imagine Dragons - Album 7,Rock,277,1960
+87,Whatever It Takes,Imagine Dragons,Imagine Dragons - Album 5,Rock,247,2018
+88,It's Time,Imagine Dragons,Imagine Dragons - Album 3,Rock,288,2022
+89,On Top Of The World,Imagine Dragons,Imagine Dragons - Album 4,Rock,228,1997
+90,Natural,Imagine Dragons,Imagine Dragons - Album 6,Rock,194,1967
+91,Bad Liar,Imagine Dragons,Imagine Dragons - Album 10,Rock,194,1966
+92,Warriors,Imagine Dragons,Imagine Dragons - Album 9,Rock,302,2024
+93,Yellow,Coldplay,Coldplay - Album 9,Rock,220,1967
+94,Fix You,Coldplay,Coldplay - Album 2,Rock,200,1983
+95,Viva La Vida,Coldplay,Coldplay - Album 4,Rock,332,1968
+96,The Scientist,Coldplay,Coldplay - Album 10,Rock,283,1975
+97,Clocks,Coldplay,Coldplay - Album 10,Rock,243,1965
+98,Paradise,Coldplay,Coldplay - Album 10,Rock,200,2013
+99,A Sky Full Of Stars,Coldplay,Coldplay - Album 5,Rock,324,2000
+100,Adventure Of A Lifetime,Coldplay,Coldplay - Album 4,Rock,232,2000
+101,Hymn For The Weekend,Coldplay,Coldplay - Album 3,Rock,247,2010
+102,Speed Of Sound,Coldplay,Coldplay - Album 8,Rock,351,1998
+103,God's Plan,Drake,Drake - Album 1,Hip Hop,260,1969
+104,One Dance,Drake,Drake - Album 2,Hip Hop,297,1972
+105,Hotline Bling,Drake,Drake - Album 9,Hip Hop,317,1987
+106,In My Feelings,Drake,Drake - Album 6,Hip Hop,247,1976
+107,Nice For What,Drake,Drake - Album 6,Hip Hop,197,1991
+108,Started From The Bottom,Drake,Drake - Album 8,Hip Hop,252,1980
+109,Take Care,Drake,Drake - Album 10,Hip Hop,319,1998
+110,Hold On We're Going Home,Drake,Drake - Album 9,Hip Hop,347,1961
+111,Passionfruit,Drake,Drake - Album 3,Hip Hop,256,1973
+112,Controlla,Drake,Drake - Album 2,Hip Hop,247,1974
+113,HUMBLE.,Kendrick Lamar,Kendrick Lamar - Album 5,Hip Hop,321,1979
+114,DNA.,Kendrick Lamar,Kendrick Lamar - Album 6,Hip Hop,252,1986
+115,Swimming Pools,Kendrick Lamar,Kendrick Lamar - Album 9,Hip Hop,232,1993
+116,Alright,Kendrick Lamar,Kendrick Lamar - Album 1,Hip Hop,305,1992
+117,King Kunta,Kendrick Lamar,Kendrick Lamar - Album 5,Hip Hop,203,2014
+118,m.A.A.d city,Kendrick Lamar,Kendrick Lamar - Album 6,Hip Hop,191,1960
+119,Money Trees,Kendrick Lamar,Kendrick Lamar - Album 3,Hip Hop,213,1993
+120,Bitch Don't Kill My Vibe,Kendrick Lamar,Kendrick Lamar - Album 9,Hip Hop,293,2014
+121,Poetic Justice,Kendrick Lamar,Kendrick Lamar - Album 2,Hip Hop,182,1974
+122,The Blacker The Berry,Kendrick Lamar,Kendrick Lamar - Album 9,Hip Hop,356,1979
+123,Lose Yourself,Eminem,Eminem - Album 10,Hip Hop,189,2007
+124,Without Me,Eminem,Eminem - Album 7,Hip Hop,321,1978
+125,Stan,Eminem,Eminem - Album 5,Hip Hop,212,1965
+126,The Real Slim Shady,Eminem,Eminem - Album 6,Hip Hop,273,1965
+127,Not Afraid,Eminem,Eminem - Album 2,Hip Hop,233,1991
+128,Love The Way You Lie,Eminem,Eminem - Album 10,Hip Hop,270,2012
+129,Mockingbird,Eminem,Eminem - Album 3,Hip Hop,219,1990
+130,Till I Collapse,Eminem,Eminem - Album 1,Hip Hop,225,2012
+131,Rap God,Eminem,Eminem - Album 7,Hip Hop,225,2002
+132,Cleanin' Out My Closet,Eminem,Eminem - Album 5,Hip Hop,351,1991
+133,Circles,Post Malone,Post Malone - Album 7,Hip Hop,220,1973
+134,Sunflower,Post Malone,Post Malone - Album 4,Hip Hop,189,2020
+135,Rockstar,Post Malone,Post Malone - Album 6,Hip Hop,231,2018
+136,Congratulations,Post Malone,Post Malone - Album 4,Hip Hop,258,1989
+137,Better Now,Post Malone,Post Malone - Album 7,Hip Hop,186,1984
+138,Psycho,Post Malone,Post Malone - Album 2,Hip Hop,264,1995
+139,White Iverson,Post Malone,Post Malone - Album 9,Hip Hop,251,2004
+140,I Fall Apart,Post Malone,Post Malone - Album 1,Hip Hop,282,2002
+141,Wow,Post Malone,Post Malone - Album 3,Hip Hop,209,1993
+142,Goodbyes,Post Malone,Post Malone - Album 1,Hip Hop,328,1993
+143,SICKO MODE,Travis Scott,Travis Scott - Album 6,Hip Hop,207,2015
+144,Goosebumps,Travis Scott,Travis Scott - Album 10,Hip Hop,260,2015
+145,Antidote,Travis Scott,Travis Scott - Album 7,Hip Hop,310,1974
+146,Highest In The Room,Travis Scott,Travis Scott - Album 5,Hip Hop,327,1984
+147,Butterfly Effect,Travis Scott,Travis Scott - Album 1,Hip Hop,191,2015
+148,Stargazing,Travis Scott,Travis Scott - Album 6,Hip Hop,313,1985
+149,90210,Travis Scott,Travis Scott - Album 6,Hip Hop,290,1968
+150,3500,Travis Scott,Travis Scott - Album 2,Hip Hop,339,2000
+151,Pick Up The Phone,Travis Scott,Travis Scott - Album 5,Hip Hop,256,2024
+152,Wake Up,Travis Scott,Travis Scott - Album 6,Hip Hop,350,2012
+153,Umbrella,Rihanna,Rihanna - Album 9,R&B,283,1997
+154,Diamonds,Rihanna,Rihanna - Album 7,R&B,212,1984
+155,We Found Love,Rihanna,Rihanna - Album 3,R&B,350,2008
+156,Work,Rihanna,Rihanna - Album 7,R&B,337,1998
+157,Stay,Rihanna,Rihanna - Album 5,R&B,320,1960
+158,Love On The Brain,Rihanna,Rihanna - Album 7,R&B,253,1986
+159,Only Girl,Rihanna,Rihanna - Album 8,R&B,328,2001
+160,What's My Name,Rihanna,Rihanna - Album 4,R&B,293,2016
+161,Don't Stop The Music,Rihanna,Rihanna - Album 3,R&B,310,2020
+162,Disturbia,Rihanna,Rihanna - Album 5,R&B,348,1970
+163,Earned It,The Weeknd,The Weeknd - Album 2,R&B,311,2002
+164,Die For You,The Weeknd,The Weeknd - Album 4,R&B,240,1999
+165,Call Out My Name,The Weeknd,The Weeknd - Album 1,R&B,230,1978
+166,Often,The Weeknd,The Weeknd - Album 8,R&B,191,1991
+167,The Morning,The Weeknd,The Weeknd - Album 8,R&B,336,1969
+168,Wicked Games,The Weeknd,The Weeknd - Album 7,R&B,286,1984
+169,High For This,The Weeknd,The Weeknd - Album 4,R&B,306,2011
+170,Crew Love,The Weeknd,The Weeknd - Album 2,R&B,217,1960
+171,Acquainted,The Weeknd,The Weeknd - Album 3,R&B,288,1988
+172,In The Night,The Weeknd,The Weeknd - Album 1,R&B,358,2019
+173,Crazy In Love,Beyoncé,Beyoncé - Album 2,R&B,322,1991
+174,Single Ladies,Beyoncé,Beyoncé - Album 8,R&B,296,1977
+175,Halo,Beyoncé,Beyoncé - Album 8,R&B,350,2000
+176,Irreplaceable,Beyoncé,Beyoncé - Album 7,R&B,336,2024
+177,Formation,Beyoncé,Beyoncé - Album 3,R&B,320,2017
+178,Drunk In Love,Beyoncé,Beyoncé - Album 5,R&B,301,2017
+179,Love On Top,Beyoncé,Beyoncé - Album 9,R&B,243,1995
+180,Run The World,Beyoncé,Beyoncé - Album 5,R&B,304,1990
+181,If I Were A Boy,Beyoncé,Beyoncé - Album 5,R&B,292,1969
+182,Partition,Beyoncé,Beyoncé - Album 6,R&B,240,1994
+183,Thinkin Bout You,Frank Ocean,Frank Ocean - Album 3,R&B,261,1970
+184,Pyramids,Frank Ocean,Frank Ocean - Album 7,R&B,218,1989
+185,Novacane,Frank Ocean,Frank Ocean - Album 4,R&B,357,1979
+186,Swim Good,Frank Ocean,Frank Ocean - Album 7,R&B,196,2013
+187,Pink + White,Frank Ocean,Frank Ocean - Album 7,R&B,264,2019
+188,Nikes,Frank Ocean,Frank Ocean - Album 7,R&B,195,1986
+189,Self Control,Frank Ocean,Frank Ocean - Album 10,R&B,279,1962
+190,Ivy,Frank Ocean,Frank Ocean - Album 1,R&B,277,2021
+191,Nights,Frank Ocean,Frank Ocean - Album 7,R&B,270,1998
+192,Lost,Frank Ocean,Frank Ocean - Album 8,R&B,287,1988
+193,The Weekend,SZA,SZA - Album 7,R&B,236,1994
+194,Good Days,SZA,SZA - Album 7,R&B,304,1963
+195,Love Galore,SZA,SZA - Album 3,R&B,266,2011
+196,All The Stars,SZA,SZA - Album 10,R&B,299,1976
+197,Broken Clocks,SZA,SZA - Album 7,R&B,316,1963
+198,Drew Barrymore,SZA,SZA - Album 2,R&B,331,1963
+199,Garden,SZA,SZA - Album 3,R&B,344,2014
+200,Prom,SZA,SZA - Album 1,R&B,298,1983
+201,Supermodel,SZA,SZA - Album 6,R&B,246,2008
+202,Normal Girl,SZA,SZA - Album 6,R&B,234,2018
+203,Do I Wanna Know?,Arctic Monkeys,Arctic Monkeys - Album 5,Indie,266,2008
+204,Why'd You Only Call Me When You're High?,Arctic Monkeys,Arctic Monkeys - Album 2,Indie,287,1992
+205,R U Mine?,Arctic Monkeys,Arctic Monkeys - Album 9,Indie,300,1962
+206,I Bet You Look Good On The Dancefloor,Arctic Monkeys,Arctic Monkeys - Album 4,Indie,193,2004
+207,Fluorescent Adolescent,Arctic Monkeys,Arctic Monkeys - Album 1,Indie,346,1968
+208,505,Arctic Monkeys,Arctic Monkeys - Album 4,Indie,187,1991
+209,Arabella,Arctic Monkeys,Arctic Monkeys - Album 4,Indie,185,1979
+210,Crying Lightning,Arctic Monkeys,Arctic Monkeys - Album 2,Indie,212,2020
+211,Cornerstone,Arctic Monkeys,Arctic Monkeys - Album 8,Indie,324,1987
+212,Tranquility Base Hotel,Arctic Monkeys,Arctic Monkeys - Album 6,Indie,359,1992
+213,The Less I Know The Better,Tame Impala,Tame Impala - Album 3,Indie,222,1974
+214,Let It Happen,Tame Impala,Tame Impala - Album 10,Indie,259,1973
+215,Feels Like We Only Go Backwards,Tame Impala,Tame Impala - Album 10,Indie,186,1999
+216,Borderline,Tame Impala,Tame Impala - Album 7,Indie,353,2008
+217,Elephant,Tame Impala,Tame Impala - Album 10,Indie,230,1969
+218,Eventually,Tame Impala,Tame Impala - Album 2,Indie,356,1991
+219,New Person Same Old Mistakes,Tame Impala,Tame Impala - Album 10,Indie,358,1998
+220,Lost In Yesterday,Tame Impala,Tame Impala - Album 6,Indie,210,1965
+221,The Moment,Tame Impala,Tame Impala - Album 6,Indie,316,2014
+222,Mind Mischief,Tame Impala,Tame Impala - Album 6,Indie,197,2024
+223,Reptilia,The Strokes,The Strokes - Album 8,Indie,183,2013
+224,Last Nite,The Strokes,The Strokes - Album 6,Indie,207,2015
+225,Someday,The Strokes,The Strokes - Album 3,Indie,342,2018
+226,Under Cover Of Darkness,The Strokes,The Strokes - Album 9,Indie,291,1982
+227,You Only Live Once,The Strokes,The Strokes - Album 10,Indie,346,1994
+228,Juicebox,The Strokes,The Strokes - Album 8,Indie,317,2021
+229,Hard To Explain,The Strokes,The Strokes - Album 6,Indie,291,1994
+230,12:51,The Strokes,The Strokes - Album 5,Indie,242,1971
+231,The Modern Age,The Strokes,The Strokes - Album 8,Indie,295,1991
+232,Barely Legal,The Strokes,The Strokes - Album 6,Indie,325,2008
+233,Pumped Up Kicks,Foster The People,Foster The People - Album 6,Indie,187,2023
+234,Sit Next To Me,Foster The People,Foster The People - Album 4,Indie,226,2022
+235,Houdini,Foster The People,Foster The People - Album 6,Indie,270,1993
+236,Helena Beat,Foster The People,Foster The People - Album 9,Indie,251,1995
+237,Don't Stop,Foster The People,Foster The People - Album 2,Indie,182,1984
+238,Coming Of Age,Foster The People,Foster The People - Album 8,Indie,241,2012
+239,Best Friend,Foster The People,Foster The People - Album 8,Indie,322,1990
+240,Waste,Foster The People,Foster The People - Album 8,Indie,345,2022
+241,Broken Jaw,Foster The People,Foster The People - Album 5,Indie,184,1971
+242,Call It What You Want,Foster The People,Foster The People - Album 4,Indie,236,2011
+243,Electric Feel,MGMT,MGMT - Album 8,Indie,258,2007
+244,Kids,MGMT,MGMT - Album 7,Indie,321,2004
+245,Time To Pretend,MGMT,MGMT - Album 6,Indie,320,2002
+246,Little Dark Age,MGMT,MGMT - Album 5,Indie,359,2018
+247,Congratulations,MGMT,MGMT - Album 4,Indie,258,1992
+248,Me And Michael,MGMT,MGMT - Album 6,Indie,210,1984
+249,When You Die,MGMT,MGMT - Album 4,Indie,210,1983
+250,She Works Out Too Much,MGMT,MGMT - Album 5,Indie,235,2021
+251,TSLAMP,MGMT,MGMT - Album 2,Indie,330,1996
+252,Flash Delirium,MGMT,MGMT - Album 4,Indie,229,1997
+253,Get Lucky,Daft Punk,Daft Punk - Album 5,Electronic,272,1982
+254,One More Time,Daft Punk,Daft Punk - Album 5,Electronic,183,1976
+255,Harder Better Faster Stronger,Daft Punk,Daft Punk - Album 9,Electronic,191,1966
+256,Around The World,Daft Punk,Daft Punk - Album 8,Electronic,254,1976
+257,Something About Us,Daft Punk,Daft Punk - Album 10,Electronic,206,1961
+258,Digital Love,Daft Punk,Daft Punk - Album 8,Electronic,252,2020
+259,Technologic,Daft Punk,Daft Punk - Album 3,Electronic,292,2003
+260,Instant Crush,Daft Punk,Daft Punk - Album 8,Electronic,193,1992
+261,Lose Yourself To Dance,Daft Punk,Daft Punk - Album 7,Electronic,209,1968
+262,Da Funk,Daft Punk,Daft Punk - Album 10,Electronic,305,1969
+263,Summer,Calvin Harris,Calvin Harris - Album 3,Electronic,341,1966
+264,Feel So Close,Calvin Harris,Calvin Harris - Album 2,Electronic,218,1998
+265,This Is What You Came For,Calvin Harris,Calvin Harris - Album 9,Electronic,243,1975
+266,Acceptable In The 80s,Calvin Harris,Calvin Harris - Album 9,Electronic,286,1988
+267,Sweet Nothing,Calvin Harris,Calvin Harris - Album 8,Electronic,277,2017
+268,How Deep Is Your Love,Calvin Harris,Calvin Harris - Album 5,Electronic,256,2014
+269,Outside,Calvin Harris,Calvin Harris - Album 10,Electronic,325,1967
+270,Thinking About You,Calvin Harris,Calvin Harris - Album 4,Electronic,205,1986
+271,Blame,Calvin Harris,Calvin Harris - Album 3,Electronic,247,1970
+272,I Need Your Love,Calvin Harris,Calvin Harris - Album 9,Electronic,241,1982
+273,Wake Me Up,Avicii,Avicii - Album 1,Electronic,199,1980
+274,Levels,Avicii,Avicii - Album 10,Electronic,284,2017
+275,Hey Brother,Avicii,Avicii - Album 1,Electronic,300,1997
+276,Waiting For Love,Avicii,Avicii - Album 5,Electronic,239,1996
+277,The Nights,Avicii,Avicii - Album 2,Electronic,359,2018
+278,Without You,Avicii,Avicii - Album 5,Electronic,355,1989
+279,You Make Me,Avicii,Avicii - Album 7,Electronic,340,1985
+280,Addicted To You,Avicii,Avicii - Album 3,Electronic,209,1988
+281,Seek Bromance,Avicii,Avicii - Album 2,Electronic,248,1978
+282,Silhouettes,Avicii,Avicii - Album 5,Electronic,195,1981
+283,Alone,Marshmello,Marshmello - Album 8,Electronic,332,1996
+284,Happier,Marshmello,Marshmello - Album 5,Electronic,211,2019
+285,Silence,Marshmello,Marshmello - Album 5,Electronic,359,2011
+286,Friends,Marshmello,Marshmello - Album 8,Electronic,308,2023
+287,Wolves,Marshmello,Marshmello - Album 7,Electronic,200,1965
+288,Here With Me,Marshmello,Marshmello - Album 1,Electronic,262,1992
+289,Ritual,Marshmello,Marshmello - Album 10,Electronic,203,1989
+290,Find Me,Marshmello,Marshmello - Album 5,Electronic,330,1962
+291,Leave Before You Love Me,Marshmello,Marshmello - Album 3,Electronic,327,1965
+292,OK Not To Be OK,Marshmello,Marshmello - Album 5,Electronic,300,2016
+293,Firestone,Kygo,Kygo - Album 8,Electronic,226,2015
+294,Stole The Show,Kygo,Kygo - Album 6,Electronic,203,2020
+295,It Ain't Me,Kygo,Kygo - Album 6,Electronic,284,2002
+296,Higher Love,Kygo,Kygo - Album 3,Electronic,351,1973
+297,Happy Now,Kygo,Kygo - Album 8,Electronic,264,2012
+298,Stargazing,Kygo,Kygo - Album 9,Electronic,253,2011
+299,Stay,Kygo,Kygo - Album 2,Electronic,189,2018
+300,Forever Yours,Kygo,Kygo - Album 6,Electronic,260,1992
+301,Carry On,Kygo,Kygo - Album 9,Electronic,209,2011
+302,Remind Me To Forget,Kygo,Kygo - Album 7,Electronic,180,2019
+303,So What,Miles Davis,Miles Davis - Album 9,Jazz,193,1984
+304,Blue In Green,Miles Davis,Miles Davis - Album 8,Jazz,272,2023
+305,All Blues,Miles Davis,Miles Davis - Album 5,Jazz,193,1986
+306,Freddie Freeloader,Miles Davis,Miles Davis - Album 5,Jazz,320,1976
+307,Flamenco Sketches,Miles Davis,Miles Davis - Album 2,Jazz,292,2022
+308,My Funny Valentine,Miles Davis,Miles Davis - Album 3,Jazz,187,1990
+309,Round Midnight,Miles Davis,Miles Davis - Album 9,Jazz,259,1961
+310,Summertime,Miles Davis,Miles Davis - Album 4,Jazz,284,1971
+311,Autumn Leaves,Miles Davis,Miles Davis - Album 2,Jazz,209,2019
+312,Bye Bye Blackbird,Miles Davis,Miles Davis - Album 8,Jazz,345,1979
+313,A Love Supreme Part 1,John Coltrane,John Coltrane - Album 7,Jazz,254,1994
+314,Giant Steps,John Coltrane,John Coltrane - Album 4,Jazz,303,2020
+315,My Favorite Things,John Coltrane,John Coltrane - Album 7,Jazz,296,1978
+316,Blue Train,John Coltrane,John Coltrane - Album 2,Jazz,228,1977
+317,Naima,John Coltrane,John Coltrane - Album 6,Jazz,250,2013
+318,Impressions,John Coltrane,John Coltrane - Album 1,Jazz,309,1994
+319,Central Park West,John Coltrane,John Coltrane - Album 10,Jazz,252,1998
+320,Alabama,John Coltrane,John Coltrane - Album 3,Jazz,328,2022
+321,Equinox,John Coltrane,John Coltrane - Album 6,Jazz,294,2021
+322,Countdown,John Coltrane,John Coltrane - Album 8,Jazz,265,2008
+323,Strange Fruit,Billie Holiday,Billie Holiday - Album 4,Jazz,262,1984
+324,God Bless The Child,Billie Holiday,Billie Holiday - Album 4,Jazz,326,2009
+325,Summertime,Billie Holiday,Billie Holiday - Album 6,Jazz,285,1965
+326,Lover Man,Billie Holiday,Billie Holiday - Album 7,Jazz,301,2008
+327,Don't Explain,Billie Holiday,Billie Holiday - Album 8,Jazz,349,1979
+328,I'll Be Seeing You,Billie Holiday,Billie Holiday - Album 9,Jazz,189,1976
+329,What A Little Moonlight Can Do,Billie Holiday,Billie Holiday - Album 2,Jazz,331,2002
+330,Easy Living,Billie Holiday,Billie Holiday - Album 9,Jazz,292,1972
+331,Solitude,Billie Holiday,Billie Holiday - Album 3,Jazz,296,1961
+332,The Man I Love,Billie Holiday,Billie Holiday - Album 2,Jazz,284,1979
+333,Dream A Little Dream,Ella Fitzgerald,Ella Fitzgerald - Album 6,Jazz,300,1993
+334,Summertime,Ella Fitzgerald,Ella Fitzgerald - Album 2,Jazz,339,2010
+335,It Don't Mean A Thing,Ella Fitzgerald,Ella Fitzgerald - Album 6,Jazz,264,2008
+336,A-Tisket A-Tasket,Ella Fitzgerald,Ella Fitzgerald - Album 9,Jazz,340,2022
+337,Someone To Watch Over Me,Ella Fitzgerald,Ella Fitzgerald - Album 4,Jazz,189,1968
+338,Cry Me A River,Ella Fitzgerald,Ella Fitzgerald - Album 4,Jazz,341,1996
+339,Cheek To Cheek,Ella Fitzgerald,Ella Fitzgerald - Album 2,Jazz,203,2015
+340,How High The Moon,Ella Fitzgerald,Ella Fitzgerald - Album 8,Jazz,342,1972
+341,Mack The Knife,Ella Fitzgerald,Ella Fitzgerald - Album 1,Jazz,222,1998
+342,Blue Skies,Ella Fitzgerald,Ella Fitzgerald - Album 1,Jazz,191,2001
+343,What A Wonderful World,Louis Armstrong,Louis Armstrong - Album 6,Jazz,255,2005
+344,Hello Dolly,Louis Armstrong,Louis Armstrong - Album 4,Jazz,290,1978
+345,La Vie En Rose,Louis Armstrong,Louis Armstrong - Album 10,Jazz,315,2012
+346,When The Saints Go Marching In,Louis Armstrong,Louis Armstrong - Album 3,Jazz,354,1983
+347,Dream A Little Dream,Louis Armstrong,Louis Armstrong - Album 10,Jazz,224,1970
+348,Blueberry Hill,Louis Armstrong,Louis Armstrong - Album 8,Jazz,277,1990
+349,A Kiss To Build A Dream On,Louis Armstrong,Louis Armstrong - Album 4,Jazz,329,1978
+350,Stardust,Louis Armstrong,Louis Armstrong - Album 8,Jazz,298,1992
+351,Mack The Knife,Louis Armstrong,Louis Armstrong - Album 8,Jazz,245,1961
+352,West End Blues,Louis Armstrong,Louis Armstrong - Album 2,Jazz,253,1980
+353,Symphony No. 9,Ludwig van Beethoven,Ludwig van Beethoven - Album 10,Classical,293,2004
+354,Für Elise,Ludwig van Beethoven,Ludwig van Beethoven - Album 5,Classical,256,2014
+355,Moonlight Sonata,Ludwig van Beethoven,Ludwig van Beethoven - Album 4,Classical,296,1998
+356,Symphony No. 5,Ludwig van Beethoven,Ludwig van Beethoven - Album 2,Classical,278,2021
+357,Ode To Joy,Ludwig van Beethoven,Ludwig van Beethoven - Album 10,Classical,240,2008
+358,Piano Concerto No. 5,Ludwig van Beethoven,Ludwig van Beethoven - Album 5,Classical,271,1997
+359,Pathétique Sonata,Ludwig van Beethoven,Ludwig van Beethoven - Album 5,Classical,185,2010
+360,Appassionata,Ludwig van Beethoven,Ludwig van Beethoven - Album 10,Classical,182,1966
+361,Violin Concerto,Ludwig van Beethoven,Ludwig van Beethoven - Album 4,Classical,307,1996
+362,Symphony No. 7,Ludwig van Beethoven,Ludwig van Beethoven - Album 4,Classical,335,2005
+363,Eine kleine Nachtmusik,Wolfgang Amadeus Mozart,Wolfgang Amadeus Mozart - Album 10,Classical,342,1984
+364,Requiem,Wolfgang Amadeus Mozart,Wolfgang Amadeus Mozart - Album 2,Classical,244,1977
+365,Symphony No. 40,Wolfgang Amadeus Mozart,Wolfgang Amadeus Mozart - Album 5,Classical,340,1965
+366,Piano Concerto No. 21,Wolfgang Amadeus Mozart,Wolfgang Amadeus Mozart - Album 10,Classical,292,1964
+367,The Magic Flute Overture,Wolfgang Amadeus Mozart,Wolfgang Amadeus Mozart - Album 2,Classical,273,1976
+368,Don Giovanni,Wolfgang Amadeus Mozart,Wolfgang Amadeus Mozart - Album 7,Classical,255,2001
+369,Turkish March,Wolfgang Amadeus Mozart,Wolfgang Amadeus Mozart - Album 3,Classical,224,1985
+370,Clarinet Concerto,Wolfgang Amadeus Mozart,Wolfgang Amadeus Mozart - Album 9,Classical,318,2006
+371,Jupiter Symphony,Wolfgang Amadeus Mozart,Wolfgang Amadeus Mozart - Album 3,Classical,308,1994
+372,Ave Verum Corpus,Wolfgang Amadeus Mozart,Wolfgang Amadeus Mozart - Album 5,Classical,245,2021
+373,Toccata and Fugue in D minor,Johann Sebastian Bach,Johann Sebastian Bach - Album 8,Classical,266,1974
+374,Air on the G String,Johann Sebastian Bach,Johann Sebastian Bach - Album 4,Classical,199,1978
+375,Brandenburg Concerto No. 3,Johann Sebastian Bach,Johann Sebastian Bach - Album 9,Classical,353,2010
+376,Cello Suite No. 1,Johann Sebastian Bach,Johann Sebastian Bach - Album 7,Classical,273,1971
+377,Goldberg Variations,Johann Sebastian Bach,Johann Sebastian Bach - Album 9,Classical,183,1993
+378,The Well-Tempered Clavier,Johann Sebastian Bach,Johann Sebastian Bach - Album 6,Classical,211,2018
+379,Mass in B minor,Johann Sebastian Bach,Johann Sebastian Bach - Album 10,Classical,352,1993
+380,Jesu Joy,Johann Sebastian Bach,Johann Sebastian Bach - Album 2,Classical,277,2007
+381,Prelude in C Major,Johann Sebastian Bach,Johann Sebastian Bach - Album 8,Classical,352,1989
+382,Chaconne,Johann Sebastian Bach,Johann Sebastian Bach - Album 10,Classical,186,2001
+383,Nocturne Op. 9 No. 2,Frédéric Chopin,Frédéric Chopin - Album 8,Classical,236,1968
+384,Waltz in A minor,Frédéric Chopin,Frédéric Chopin - Album 7,Classical,359,1998
+385,Fantaisie-Impromptu,Frédéric Chopin,Frédéric Chopin - Album 1,Classical,209,1977
+386,Ballade No. 1,Frédéric Chopin,Frédéric Chopin - Album 8,Classical,189,1998
+387,Étude Op. 10 No. 3,Frédéric Chopin,Frédéric Chopin - Album 4,Classical,209,1972
+388,Polonaise Op. 53,Frédéric Chopin,Frédéric Chopin - Album 7,Classical,317,1977
+389,Prelude in E minor,Frédéric Chopin,Frédéric Chopin - Album 9,Classical,296,2007
+390,Waltz in C# minor,Frédéric Chopin,Frédéric Chopin - Album 7,Classical,287,1979
+391,Nocturne in E-flat,Frédéric Chopin,Frédéric Chopin - Album 8,Classical,347,1972
+392,Mazurka Op. 68,Frédéric Chopin,Frédéric Chopin - Album 5,Classical,337,2012
+393,Swan Lake,Pyotr Tchaikovsky,Pyotr Tchaikovsky - Album 4,Classical,188,2007
+394,The Nutcracker Suite,Pyotr Tchaikovsky,Pyotr Tchaikovsky - Album 4,Classical,293,2016
+395,1812 Overture,Pyotr Tchaikovsky,Pyotr Tchaikovsky - Album 6,Classical,272,1972
+396,Dance of the Sugar Plum Fairy,Pyotr Tchaikovsky,Pyotr Tchaikovsky - Album 1,Classical,319,2005
+397,Sleeping Beauty Waltz,Pyotr Tchaikovsky,Pyotr Tchaikovsky - Album 4,Classical,281,1995
+398,Romeo and Juliet Overture,Pyotr Tchaikovsky,Pyotr Tchaikovsky - Album 2,Classical,211,2018
+399,Piano Concerto No. 1,Pyotr Tchaikovsky,Pyotr Tchaikovsky - Album 10,Classical,349,1987
+400,Symphony No. 6,Pyotr Tchaikovsky,Pyotr Tchaikovsky - Album 6,Classical,185,1966
+401,Waltz of the Flowers,Pyotr Tchaikovsky,Pyotr Tchaikovsky - Album 10,Classical,242,1976
+402,March from Nutcracker,Pyotr Tchaikovsky,Pyotr Tchaikovsky - Album 9,Classical,232,1968
+403,Ring of Fire,Johnny Cash,Johnny Cash - Album 4,Country,233,1987
+404,I Walk The Line,Johnny Cash,Johnny Cash - Album 10,Country,264,1978
+405,Folsom Prison Blues,Johnny Cash,Johnny Cash - Album 3,Country,180,1995
+406,Hurt,Johnny Cash,Johnny Cash - Album 3,Country,213,1992
+407,A Boy Named Sue,Johnny Cash,Johnny Cash - Album 3,Country,208,1963
+408,Man In Black,Johnny Cash,Johnny Cash - Album 4,Country,183,2005
+409,Jackson,Johnny Cash,Johnny Cash - Album 1,Country,330,2001
+410,Get Rhythm,Johnny Cash,Johnny Cash - Album 1,Country,224,1993
+411,Sunday Morning Coming Down,Johnny Cash,Johnny Cash - Album 9,Country,212,2013
+412,One,Johnny Cash,Johnny Cash - Album 8,Country,209,1968
+413,Jolene,Dolly Parton,Dolly Parton - Album 9,Country,294,2006
+414,9 to 5,Dolly Parton,Dolly Parton - Album 8,Country,331,1973
+415,I Will Always Love You,Dolly Parton,Dolly Parton - Album 10,Country,308,1988
+416,Coat of Many Colors,Dolly Parton,Dolly Parton - Album 8,Country,191,1998
+417,Here You Come Again,Dolly Parton,Dolly Parton - Album 1,Country,344,1963
+418,Islands In The Stream,Dolly Parton,Dolly Parton - Album 7,Country,302,2011
+419,Two Doors Down,Dolly Parton,Dolly Parton - Album 8,Country,355,1973
+420,Why'd You Come In Here,Dolly Parton,Dolly Parton - Album 2,Country,293,1969
+421,Eagle When She Flies,Dolly Parton,Dolly Parton - Album 2,Country,262,1978
+422,Rockin' Years,Dolly Parton,Dolly Parton - Album 10,Country,212,1995
+423,Before He Cheats,Carrie Underwood,Carrie Underwood - Album 7,Country,342,2001
+424,Jesus Take The Wheel,Carrie Underwood,Carrie Underwood - Album 8,Country,332,1997
+425,Blown Away,Carrie Underwood,Carrie Underwood - Album 2,Country,309,2015
+426,Something In The Water,Carrie Underwood,Carrie Underwood - Album 9,Country,359,1974
+427,Cowboy Casanova,Carrie Underwood,Carrie Underwood - Album 8,Country,235,2015
+428,Good Girl,Carrie Underwood,Carrie Underwood - Album 6,Country,238,2012
+429,Undo It,Carrie Underwood,Carrie Underwood - Album 7,Country,296,2011
+430,Last Name,Carrie Underwood,Carrie Underwood - Album 7,Country,204,2000
+431,Two Black Cadillacs,Carrie Underwood,Carrie Underwood - Album 6,Country,260,1992
+432,Church Bells,Carrie Underwood,Carrie Underwood - Album 2,Country,219,2020
+433,Country Girl,Luke Bryan,Luke Bryan - Album 2,Country,203,1970
+434,Drunk On You,Luke Bryan,Luke Bryan - Album 6,Country,290,1972
+435,Play It Again,Luke Bryan,Luke Bryan - Album 10,Country,213,1967
+436,That's My Kind Of Night,Luke Bryan,Luke Bryan - Album 2,Country,323,2002
+437,Crash My Party,Luke Bryan,Luke Bryan - Album 7,Country,285,2005
+438,Strip It Down,Luke Bryan,Luke Bryan - Album 10,Country,193,1996
+439,Knockin' Boots,Luke Bryan,Luke Bryan - Album 2,Country,259,2005
+440,I Don't Want This Night To End,Luke Bryan,Luke Bryan - Album 4,Country,327,2024
+441,Do I,Luke Bryan,Luke Bryan - Album 4,Country,219,2021
+442,Most People Are Good,Luke Bryan,Luke Bryan - Album 9,Country,207,2004
+443,Tim McGraw,Taylor Swift,Taylor Swift - Album 5,Country,274,1974
+444,Teardrops On My Guitar,Taylor Swift,Taylor Swift - Album 7,Country,326,1988
+445,Our Song,Taylor Swift,Taylor Swift - Album 10,Country,323,1963
+446,Picture To Burn,Taylor Swift,Taylor Swift - Album 1,Country,348,1994
+447,Should've Said No,Taylor Swift,Taylor Swift - Album 5,Country,226,1994
+448,Love Story,Taylor Swift,Taylor Swift - Album 1,Country,266,2004
+449,You Belong With Me,Taylor Swift,Taylor Swift - Album 10,Country,226,1978
+450,Fifteen,Taylor Swift,Taylor Swift - Album 2,Country,348,2011
+451,Fearless,Taylor Swift,Taylor Swift - Album 2,Country,216,1963
+452,White Horse,Taylor Swift,Taylor Swift - Album 7,Country,315,1987
+453,Enter Sandman,Metallica,Metallica - Album 6,Metal,287,2018
+454,Master of Puppets,Metallica,Metallica - Album 5,Metal,220,2007
+455,Nothing Else Matters,Metallica,Metallica - Album 1,Metal,263,1970
+456,One,Metallica,Metallica - Album 10,Metal,219,1980
+457,Fade To Black,Metallica,Metallica - Album 5,Metal,192,1970
+458,For Whom The Bell Tolls,Metallica,Metallica - Album 8,Metal,293,2014
+459,Seek & Destroy,Metallica,Metallica - Album 7,Metal,335,2016
+460,Battery,Metallica,Metallica - Album 9,Metal,249,1987
+461,Ride The Lightning,Metallica,Metallica - Album 7,Metal,209,2004
+462,The Unforgiven,Metallica,Metallica - Album 10,Metal,208,1996
+463,The Trooper,Iron Maiden,Iron Maiden - Album 1,Metal,304,1999
+464,Fear Of The Dark,Iron Maiden,Iron Maiden - Album 10,Metal,236,2010
+465,Run To The Hills,Iron Maiden,Iron Maiden - Album 4,Metal,194,1960
+466,Hallowed Be Thy Name,Iron Maiden,Iron Maiden - Album 3,Metal,257,1987
+467,Number Of The Beast,Iron Maiden,Iron Maiden - Album 6,Metal,245,1997
+468,Aces High,Iron Maiden,Iron Maiden - Album 8,Metal,210,1960
+469,Wasted Years,Iron Maiden,Iron Maiden - Album 3,Metal,290,1982
+470,Can I Play With Madness,Iron Maiden,Iron Maiden - Album 9,Metal,277,1989
+471,Powerslave,Iron Maiden,Iron Maiden - Album 2,Metal,323,2005
+472,2 Minutes To Midnight,Iron Maiden,Iron Maiden - Album 7,Metal,281,1965
+473,Paranoid,Black Sabbath,Black Sabbath - Album 2,Metal,184,2018
+474,Iron Man,Black Sabbath,Black Sabbath - Album 10,Metal,260,2014
+475,War Pigs,Black Sabbath,Black Sabbath - Album 5,Metal,283,2013
+476,Heaven And Hell,Black Sabbath,Black Sabbath - Album 1,Metal,209,2011
+477,N.I.B.,Black Sabbath,Black Sabbath - Album 10,Metal,263,1981
+478,Sweet Leaf,Black Sabbath,Black Sabbath - Album 2,Metal,297,2006
+479,Children Of The Grave,Black Sabbath,Black Sabbath - Album 4,Metal,291,1973
+480,The Wizard,Black Sabbath,Black Sabbath - Album 9,Metal,291,2011
+481,Planet Caravan,Black Sabbath,Black Sabbath - Album 5,Metal,200,2010
+482,Sabbath Bloody Sabbath,Black Sabbath,Black Sabbath - Album 6,Metal,266,1988
+483,Raining Blood,Slayer,Slayer - Album 9,Metal,223,1969
+484,Angel of Death,Slayer,Slayer - Album 9,Metal,342,1974
+485,South of Heaven,Slayer,Slayer - Album 6,Metal,310,1984
+486,Seasons In The Abyss,Slayer,Slayer - Album 4,Metal,269,1978
+487,War Ensemble,Slayer,Slayer - Album 5,Metal,206,1978
+488,Dead Skin Mask,Slayer,Slayer - Album 10,Metal,230,1982
+489,Mandatory Suicide,Slayer,Slayer - Album 3,Metal,219,1969
+490,Postmortem,Slayer,Slayer - Album 8,Metal,340,2023
+491,Chemical Warfare,Slayer,Slayer - Album 10,Metal,324,2017
+492,Hell Awaits,Slayer,Slayer - Album 6,Metal,344,2001
+493,Psychosocial,Slipknot,Slipknot - Album 2,Metal,218,2016
+494,Duality,Slipknot,Slipknot - Album 5,Metal,300,2016
+495,Wait And Bleed,Slipknot,Slipknot - Album 6,Metal,250,1967
+496,Before I Forget,Slipknot,Slipknot - Album 5,Metal,309,1969
+497,The Devil In I,Slipknot,Slipknot - Album 1,Metal,298,2017
+498,Snuff,Slipknot,Slipknot - Album 5,Metal,194,2007
+499,Left Behind,Slipknot,Slipknot - Album 10,Metal,199,1971
+500,Vermilion,Slipknot,Slipknot - Album 7,Metal,332,2024
+501,Spit It Out,Slipknot,Slipknot - Album 8,Metal,298,1965
+502,Eyeless,Slipknot,Slipknot - Album 6,Metal,326,1984
