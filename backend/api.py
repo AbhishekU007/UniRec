@@ -129,13 +129,49 @@ async def load_models():
                     break
         
         if not models_dir:
-            print("❌ Models directory not found!")
-            print(f"🔍 Checked paths: {[os.path.abspath(p) for p in possible_paths]}")
-            print(f"📂 Current directory: {os.getcwd()}")
-            print(f"📁 Directory contents: {os.listdir(os.getcwd())}")
-            if os.path.exists('../'):
-                print(f"📁 Parent directory contents: {os.listdir('../')}")
-            return
+            # Attempt on-the-fly data generation and model training (first deploy bootstrapping)
+            try:
+                print("❌ Models directory not found! Attempting to generate data and train models...")
+                print(f"🔍 Checked paths: {[os.path.abspath(p) for p in possible_paths]}")
+                print(f"📂 Current directory: {os.getcwd()}")
+                try:
+                    print(f"📁 Directory contents: {os.listdir(os.getcwd())}")
+                except Exception:
+                    pass
+                parent_dir = os.path.dirname(current_dir)
+                try:
+                    print(f"📁 Parent directory contents: {os.listdir(parent_dir)}")
+                except Exception:
+                    pass
+
+                # Ensure models directory exists at project root
+                project_root = os.path.dirname(current_dir)
+                root_models = os.path.join(project_root, 'models')
+                os.makedirs(root_models, exist_ok=True)
+
+                # Generate data (script executes on import)
+                print("🧪 Generating datasets...")
+                import importlib
+                importlib.invalidate_caches()
+                import generate_comprehensive_data  # noqa: F401  (executes on import)
+
+                # Train models
+                print("🧠 Training models (this may take a few minutes)...")
+                from train_all_models import train_all_models
+                ok = train_all_models()
+                if not ok:
+                    print("❌ Training failed; models still unavailable.")
+                    return
+
+                # Re-resolve models directory after training
+                if os.path.exists(root_models):
+                    models_dir = root_models
+                else:
+                    models_dir = project_root if os.path.exists(os.path.join(project_root, 'movie_recommender.pkl')) else None
+
+            except Exception as boot_e:
+                print(f"❌ Bootstrap training error: {boot_e}")
+                return
             
         print(f"\n📂 Loading models from: {models_dir}\n")
         
