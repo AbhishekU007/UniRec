@@ -53,3 +53,4 @@ test_data/
 .coverage
 htmlcov/
 .pytest_cache/
+.vercel

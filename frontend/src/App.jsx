@@ -4,8 +4,8 @@ import Auth from './Auth';
 import OnboardingQuiz from './OnboardingQuiz';
 import LandingPage from './LandingPage';
 
-// API base URL
-const API_BASE = 'http://localhost:8000';
+// API base URL - uses environment variable or falls back to localhost
+const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:8000';
 
 const UniRecApp = () => {
   const [authState, setAuthState] = useState('loading'); // loading, landing, login, signup, authenticated

@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { LogIn, UserPlus, Mail, Lock, User as UserIcon, ArrowLeft } from 'lucide-react';
 import OnboardingQuiz from './OnboardingQuiz';
 
+const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+
 const Auth = ({ onAuth, initialMode = 'login', onBack }) => {
   const [isLogin, setIsLogin] = useState(initialMode === 'login');
   const [showQuiz, setShowQuiz] = useState(false);
@@ -26,7 +28,7 @@ const Auth = ({ onAuth, initialMode = 'login', onBack }) => {
     try {
       if (isLogin) {
         // Login flow
-        const response = await fetch('http://localhost:8000/api/auth/login', {
+        const response = await fetch(`${API_BASE}/api/auth/login`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -62,7 +64,7 @@ const Auth = ({ onAuth, initialMode = 'login', onBack }) => {
   const handleQuizComplete = async (quizResponses) => {
     setLoading(true);
     try {
-      const response = await fetch('http://localhost:8000/api/auth/signup', {
+      const response = await fetch(`${API_BASE}/api/auth/signup`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
