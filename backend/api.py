@@ -32,8 +32,7 @@ allowed_origins = [
     "http://localhost:3000",
     "http://localhost:5173", 
     "http://localhost:5174",
-    # Add your production frontend URL here after deployment
-    # "https://your-app.vercel.app",
+    "https://uni-rec.vercel.app"
 ]
 
 app.add_middleware(
@@ -107,20 +106,32 @@ class PreferenceUpdateRequest(BaseModel):
 async def load_models():
     """Load all trained models on startup"""
     try:
-        # Check both backend/models and ../models paths
-        model_paths = ['models/', '../models/']
-        models_dir = None
+        # Check multiple possible model paths
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        possible_paths = [
+            '../models/',  # When running from backend/
+            'models/',     # When running from root
+            os.path.join(current_dir, '../models/'),  # Absolute path from backend
+            '/opt/render/project/src/models/',  # Render deployment path
+        ]
         
-        for path in model_paths:
-            if os.path.exists(os.path.join(path, 'movie_recommender.pkl')):
-                models_dir = path
+        models_dir = None
+        for path in possible_paths:
+            full_path = os.path.abspath(path)
+            if os.path.exists(full_path) and os.path.exists(os.path.join(full_path, 'movie_recommender.pkl')):
+                models_dir = full_path
                 break
         
         if not models_dir:
             print("❌ Models directory not found!")
+            print(f"🔍 Checked paths: {[os.path.abspath(p) for p in possible_paths]}")
+            print(f"📂 Current directory: {os.getcwd()}")
+            print(f"📁 Directory contents: {os.listdir(os.getcwd())}")
+            if os.path.exists('../'):
+                print(f"📁 Parent directory contents: {os.listdir('../')}")
             return
             
-        print(f"\n📂 Loading models from: {os.path.abspath(models_dir)}\n")
+        print(f"\n📂 Loading models from: {models_dir}\n")
         
         if os.path.exists(os.path.join(models_dir, 'movie_recommender.pkl')):
             models['movie'] = MovieRecommender.load_model(os.path.join(models_dir, 'movie_recommender.pkl'))
