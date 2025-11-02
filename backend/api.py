@@ -27,17 +27,19 @@ app = FastAPI(
 )
 
 # CORS middleware for React frontend
-# Add your Vercel domain here once deployed
+# Allow local dev and any Vercel deployment subdomain
 allowed_origins = [
     "http://localhost:3000",
-    "http://localhost:5173", 
+    "http://localhost:5173",
     "http://localhost:5174",
-    "https://uni-rec.vercel.app"
+    # Keep explicit production domain if set up
+    "https://uni-rec.vercel.app",
 ]
 
 app.add_middleware(
     CORSMiddleware,
     allow_origins=allowed_origins,
+    allow_origin_regex=r"https://(.+\.)?vercel\.app$",
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

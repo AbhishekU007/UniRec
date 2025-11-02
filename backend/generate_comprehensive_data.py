@@ -7,13 +7,13 @@ import pandas as pd
 import numpy as np
 from datetime import datetime, timedelta
 import random
+import os
 
 # Set seed for reproducibility
 np.random.seed(42)
 random.seed(42)
 
 # ==================== MUSIC DATA ====================
-print("🎵 Generating comprehensive music data...")
 
 music_genres_quiz = ['Pop', 'Rock', 'Hip Hop', 'Jazz', 'Classical', 'Electronic', 'Country', 'R&B', 'Indie', 'Metal']
 
@@ -143,12 +143,47 @@ tracks_df.to_csv('../data/tracks.csv', index=False)
 listening_df.to_csv('../data/listening_history.csv', index=False)
 print("✓ Music data saved!\n")
 
-# ==================== MOVIE DATA - Already has good data from MovieLens ====================
-print("🎬 Movie data already comprehensive (MovieLens 100K)")
-print("   Skipping movie generation...\n")
+# ==================== MOVIE DATA ====================
+data_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data'))
+movies_path = os.path.join(data_root, 'movies.csv')
+ratings_path = os.path.join(data_root, 'ratings.csv')
+
+if os.path.exists(movies_path) and os.path.exists(ratings_path):
+    print("🎬 Movie data already comprehensive (MovieLens 100K)")
+    print("   Using existing movies.csv and ratings.csv...\n")
+else:
+    print("🎬 MovieLens files not found — creating synthetic movie dataset...")
+    try:
+        genres = ['Action', 'Comedy', 'Drama', 'Thriller', 'Romance', 'Sci-Fi', 'Adventure', 'Animation']
+        num_movies = 300
+        num_users = 100
+
+        # Create movies
+        movies = pd.DataFrame({
+            'movie_id': range(1, num_movies + 1),
+            'title': [f"Movie {i}" for i in range(1, num_movies + 1)],
+            'genres': [random.choice(genres) for _ in range(num_movies)]
+        })
+
+        # Create ratings
+        num_ratings = 50000
+        ratings = pd.DataFrame([
+            {
+                'user_id': random.randint(1, num_users),
+                'movie_id': random.randint(1, num_movies),
+                'rating': random.randint(1, 5)
+            }
+            for _ in range(num_ratings)
+        ])
+
+        os.makedirs(data_root, exist_ok=True)
+        movies.to_csv(movies_path, index=False)
+        ratings.to_csv(ratings_path, index=False)
+        print("✓ Synthetic movies.csv and ratings.csv created!\n")
+    except Exception as e:
+        print(f"❌ Failed to create synthetic movie data: {e}\n")
 
 # ==================== PRODUCT DATA ====================
-print("🛍️ Generating comprehensive product data...")
 
 shopping_categories_quiz = ['Electronics', 'Fashion', 'Books', 'Home & Garden', 'Sports', 
                             'Beauty', 'Toys', 'Food', 'Health', 'Automotive']
@@ -373,10 +408,11 @@ print(f"✓ Generated {len(reviews_df)} product reviews")
 
 products_df.to_csv('../data/products.csv', index=False)
 reviews_df.to_csv('../data/reviews.csv', index=False)
+# Also write legacy filename for compatibility
+reviews_df.to_csv('../data/product_reviews.csv', index=False)
 print("✓ Product data saved!\n")
 
 # ==================== COURSE DATA ====================
-print("📚 Generating comprehensive course data...")
 
 learning_topics_quiz = ['Programming', 'Business', 'Design', 'Marketing', 'Data Science',
                         'Languages', 'Music', 'Photography', 'Finance', 'Health']
