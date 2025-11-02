@@ -27,7 +27,8 @@ build/
 Thumbs.db
 
 # Project specific
-data/*.csv
+# Allow committing datasets for deployment
+# (was: data/*.csv)
 models/*.pkl
 *.log
 
