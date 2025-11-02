@@ -119,6 +119,24 @@ Swagger/OpenAPI docs: `http://localhost:8000/docs`.
 
 ---
 
+## **Deployment**
+
+### Quick Deploy
+**Backend** → [Render](https://render.com) | **Frontend** → [Vercel](https://vercel.com)
+
+See [DEPLOYMENT.md](DEPLOYMENT.md) for detailed instructions and [DEPLOYMENT_CHECKLIST.md](DEPLOYMENT_CHECKLIST.md) for step-by-step guide.
+
+### Environment Variables
+**Frontend (Vercel):**
+- `VITE_API_URL` - Backend URL (e.g., `https://unirec-backend.onrender.com`)
+
+**Backend (Render):**
+- `SECRET_KEY` - JWT secret (recommended for production)
+
+Current production: https://uni-rec.vercel.app
+
+---
+
 ## **License & Attribution**
 MIT License. Generated datasets are synthetic; swap in your own CSVs via `backend/generate_data.py` if needed.
 
