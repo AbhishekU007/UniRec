@@ -1,0 +1,464 @@
+[
+  {
+    "user_id": 4,
+    "item_id": 13,
+    "domain": "courses",
+    "action_type": "view",
+    "timestamp": "2025-11-02T13:07:58.343311",
+    "metadata": {
+      "instructor": "Jason Taylor",
+      "category": "Programming",
+      "subcategory": "",
+      "difficulty": "Beginner",
+      "duration": 6
+    }
+  },
+  {
+    "user_id": 4,
+    "item_id": 12,
+    "domain": "courses",
+    "action_type": "view",
+    "timestamp": "2025-11-02T13:08:01.092940",
+    "metadata": {
+      "instructor": "Ryan Kroonenburg",
+      "category": "Programming",
+      "subcategory": "",
+      "difficulty": "Beginner",
+      "duration": 22
+    }
+  },
+  {
+    "user_id": 4,
+    "item_id": 13,
+    "domain": "courses",
+    "action_type": "like",
+    "timestamp": "2025-11-02T13:08:03.221267",
+    "metadata": {
+      "instructor": "Jason Taylor",
+      "category": "Programming",
+      "subcategory": "",
+      "difficulty": "Beginner",
+      "duration": 6
+    }
+  },
+  {
+    "user_id": 4,
+    "item_id": 13,
+    "domain": "courses",
+    "action_type": "like",
+    "timestamp": "2025-11-02T13:10:18.338568",
+    "metadata": {
+      "instructor": "Jason Taylor",
+      "category": "Programming",
+      "subcategory": "",
+      "difficulty": "Beginner",
+      "duration": 6
+    }
+  },
+  {
+    "user_id": 4,
+    "item_id": 13,
+    "domain": "courses",
+    "action_type": "like",
+    "timestamp": "2025-11-02T13:14:51.887225",
+    "metadata": {
+      "instructor": "Jason Taylor",
+      "category": "Programming",
+      "subcategory": "",
+      "difficulty": "Beginner",
+      "duration": 6
+    }
+  },
+  {
+    "user_id": 4,
+    "item_id": 12,
+    "domain": "courses",
+    "action_type": "like",
+    "timestamp": "2025-11-02T13:15:59.824794",
+    "metadata": {
+      "instructor": "Ryan Kroonenburg",
+      "category": "Programming",
+      "subcategory": "",
+      "difficulty": "Beginner",
+      "duration": 22
+    }
+  },
+  {
+    "user_id": 4,
+    "item_id": 13,
+    "domain": "courses",
+    "action_type": "like",
+    "timestamp": "2025-11-02T13:16:51.275495",
+    "metadata": {
+      "instructor": "Jason Taylor",
+      "category": "Programming",
+      "subcategory": "",
+      "difficulty": "Beginner",
+      "duration": 6
+    }
+  },
+  {
+    "user_id": 4,
+    "item_id": 12,
+    "domain": "courses",
+    "action_type": "like",
+    "timestamp": "2025-11-02T13:17:05.371845",
+    "metadata": {
+      "instructor": "Ryan Kroonenburg",
+      "category": "Programming",
+      "subcategory": "",
+      "difficulty": "Beginner",
+      "duration": 22
+    }
+  },
+  {
+    "user_id": 4,
+    "item_id": 13,
+    "domain": "courses",
+    "action_type": "view",
+    "timestamp": "2025-11-02T13:37:01.815245",
+    "metadata": {
+      "instructor": "Jason Taylor",
+      "category": "Programming",
+      "subcategory": "",
+      "difficulty": "Beginner",
+      "duration": 6
+    }
+  },
+  {
+    "user_id": 4,
+    "item_id": 13,
+    "domain": "courses",
+    "action_type": "like",
+    "timestamp": "2025-11-02T13:37:04.170872",
+    "metadata": {
+      "instructor": "Jason Taylor",
+      "category": "Programming",
+      "subcategory": "",
+      "difficulty": "Beginner",
+      "duration": 6
+    }
+  },
+  {
+    "user_id": 4,
+    "item_id": 12,
+    "domain": "courses",
+    "action_type": "like",
+    "timestamp": "2025-11-02T13:37:07.011420",
+    "metadata": {
+      "instructor": "Ryan Kroonenburg",
+      "category": "Programming",
+      "subcategory": "",
+      "difficulty": "Beginner",
+      "duration": 22
+    }
+  },
+  {
+    "user_id": 4,
+    "item_id": 12,
+    "domain": "courses",
+    "action_type": "like",
+    "timestamp": "2025-11-02T13:37:08.306634",
+    "metadata": {
+      "instructor": "Ryan Kroonenburg",
+      "category": "Programming",
+      "subcategory": "",
+      "difficulty": "Beginner",
+      "duration": 22
+    }
+  },
+  {
+    "user_id": 4,
+    "item_id": 13,
+    "domain": "courses",
+    "action_type": "like",
+    "timestamp": "2025-11-02T13:37:40.996400",
+    "metadata": {
+      "instructor": "Jason Taylor",
+      "category": "Programming",
+      "subcategory": "",
+      "difficulty": "Beginner",
+      "duration": 6
+    }
+  },
+  {
+    "user_id": 4,
+    "item_id": 12,
+    "domain": "courses",
+    "action_type": "like",
+    "timestamp": "2025-11-02T13:37:42.128402",
+    "metadata": {
+      "instructor": "Ryan Kroonenburg",
+      "category": "Programming",
+      "subcategory": "",
+      "difficulty": "Beginner",
+      "duration": 22
+    }
+  },
+  {
+    "user_id": 4,
+    "item_id": 73,
+    "domain": "courses",
+    "action_type": "like",
+    "timestamp": "2025-11-02T13:41:35.248465",
+    "metadata": {
+      "instructor": "Rob J Hyndman",
+      "category": "Data Science",
+      "subcategory": "",
+      "difficulty": "Beginner",
+      "duration": 44
+    }
+  },
+  {
+    "user_id": 4,
+    "item_id": 66,
+    "domain": "courses",
+    "action_type": "like",
+    "timestamp": "2025-11-02T13:41:37.646008",
+    "metadata": {
+      "instructor": "Kirill Eremenko",
+      "category": "Data Science",
+      "subcategory": "",
+      "difficulty": "Beginner",
+      "duration": 15
+    }
+  },
+  {
+    "user_id": 4,
+    "item_id": 72,
+    "domain": "courses",
+    "action_type": "like",
+    "timestamp": "2025-11-02T13:41:39.323942",
+    "metadata": {
+      "instructor": "Hadelin de Ponteves",
+      "category": "Data Science",
+      "subcategory": "",
+      "difficulty": "Beginner",
+      "duration": 17
+    }
+  },
+  {
+    "user_id": 4,
+    "item_id": 73,
+    "domain": "courses",
+    "action_type": "like",
+    "timestamp": "2025-11-02T14:40:53.701412",
+    "metadata": {
+      "course_id": 73,
+      "instructor": "Rob J Hyndman",
+      "category": "Data Science",
+      "subcategory": "",
+      "difficulty": "Beginner",
+      "duration": 44,
+      "rl_boost": 0.4
+    }
+  },
+  {
+    "user_id": 4,
+    "item_id": 72,
+    "domain": "courses",
+    "action_type": "like",
+    "timestamp": "2025-11-02T14:40:56.834968",
+    "metadata": {
+      "course_id": 72,
+      "instructor": "Hadelin de Ponteves",
+      "category": "Data Science",
+      "subcategory": "",
+      "difficulty": "Beginner",
+      "duration": 17,
+      "rl_boost": 0.4
+    }
+  },
+  {
+    "user_id": 4,
+    "item_id": 63,
+    "domain": "courses",
+    "action_type": "like",
+    "timestamp": "2025-11-02T14:41:19.739048",
+    "metadata": {
+      "course_id": 63,
+      "instructor": "Andrew Ng",
+      "category": "Data Science",
+      "subcategory": "",
+      "difficulty": "Beginner",
+      "duration": 50,
+      "rl_boost": 0
+    }
+  },
+  {
+    "user_id": 4,
+    "item_id": 62,
+    "domain": "courses",
+    "action_type": "like",
+    "timestamp": "2025-11-02T14:41:21.397131",
+    "metadata": {
+      "course_id": 62,
+      "instructor": "Andrew Ng",
+      "category": "Data Science",
+      "subcategory": "",
+      "difficulty": "Beginner",
+      "duration": 31,
+      "rl_boost": 0
+    }
+  },
+  {
+    "user_id": 4,
+    "item_id": 61,
+    "domain": "courses",
+    "action_type": "like",
+    "timestamp": "2025-11-02T14:41:24.331776",
+    "metadata": {
+      "course_id": 61,
+      "instructor": "Kirill Eremenko",
+      "category": "Data Science",
+      "subcategory": "",
+      "difficulty": "Beginner",
+      "duration": 45,
+      "rl_boost": 0
+    }
+  },
+  {
+    "user_id": 4,
+    "item_id": 61,
+    "domain": "courses",
+    "action_type": "like",
+    "timestamp": "2025-11-02T14:41:25.417996",
+    "metadata": {
+      "course_id": 61,
+      "instructor": "Kirill Eremenko",
+      "category": "Data Science",
+      "subcategory": "",
+      "difficulty": "Beginner",
+      "duration": 45,
+      "rl_boost": 0
+    }
+  },
+  {
+    "user_id": 4,
+    "item_id": 66,
+    "domain": "courses",
+    "action_type": "like",
+    "timestamp": "2025-11-02T14:41:27.542413",
+    "metadata": {
+      "course_id": 66,
+      "instructor": "Kirill Eremenko",
+      "category": "Data Science",
+      "subcategory": "",
+      "difficulty": "Beginner",
+      "duration": 15,
+      "rl_boost": 0.4
+    }
+  },
+  {
+    "user_id": 4,
+    "item_id": 61,
+    "domain": "courses",
+    "action_type": "view",
+    "timestamp": "2025-11-02T14:42:29.539246",
+    "metadata": {
+      "course_id": 61,
+      "instructor": "Kirill Eremenko",
+      "category": "Data Science",
+      "subcategory": "",
+      "difficulty": "Beginner",
+      "duration": 45,
+      "rl_boost": 0.5
+    }
+  },
+  {
+    "user_id": 4,
+    "item_id": 2,
+    "domain": "courses",
+    "action_type": "dislike",
+    "timestamp": "2025-11-02T14:42:33.649413",
+    "metadata": {
+      "course_id": 2,
+      "instructor": "Colt Steele",
+      "category": "Programming",
+      "subcategory": "",
+      "difficulty": "Beginner",
+      "duration": 19,
+      "rl_boost": 0
+    }
+  },
+  {
+    "user_id": 4,
+    "item_id": 7,
+    "domain": "courses",
+    "action_type": "dislike",
+    "timestamp": "2025-11-02T14:42:37.985806",
+    "metadata": {
+      "course_id": 7,
+      "instructor": "Tim Buchalka",
+      "category": "Programming",
+      "subcategory": "",
+      "difficulty": "Beginner",
+      "duration": 45,
+      "rl_boost": 0
+    }
+  },
+  {
+    "user_id": 4,
+    "item_id": 6,
+    "domain": "courses",
+    "action_type": "dislike",
+    "timestamp": "2025-11-02T14:42:38.758135",
+    "metadata": {
+      "course_id": 6,
+      "instructor": "Angela Yu",
+      "category": "Programming",
+      "subcategory": "",
+      "difficulty": "Beginner",
+      "duration": 21,
+      "rl_boost": 0
+    }
+  },
+  {
+    "user_id": 4,
+    "item_id": 10,
+    "domain": "courses",
+    "action_type": "dislike",
+    "timestamp": "2025-11-02T14:43:05.366888",
+    "metadata": {
+      "course_id": 10,
+      "instructor": "Jose Portilla",
+      "category": "Programming",
+      "subcategory": "",
+      "difficulty": "Beginner",
+      "duration": 44,
+      "rl_boost": 0
+    }
+  },
+  {
+    "user_id": 4,
+    "item_id": 9,
+    "domain": "courses",
+    "action_type": "dislike",
+    "timestamp": "2025-11-02T14:43:06.157700",
+    "metadata": {
+      "course_id": 9,
+      "instructor": "Kirill Eremenko",
+      "category": "Programming",
+      "subcategory": "",
+      "difficulty": "Beginner",
+      "duration": 17,
+      "rl_boost": 0
+    }
+  },
+  {
+    "user_id": 4,
+    "item_id": 8,
+    "domain": "courses",
+    "action_type": "dislike",
+    "timestamp": "2025-11-02T14:43:07.126982",
+    "metadata": {
+      "course_id": 8,
+      "instructor": "Ben Tristem",
+      "category": "Programming",
+      "subcategory": "",
+      "difficulty": "Beginner",
+      "duration": 44,
+      "rl_boost": 0
+    }
+  }
+]

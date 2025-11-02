@@ -28,8 +28,8 @@ class MovieRecommender:
         
         # Create user-item matrix for collaborative filtering
         self.user_item_matrix = ratings.pivot_table(
-            index='userId', 
-            columns='movieId', 
+            index='user_id', 
+            columns='movie_id', 
             values='rating'
         ).fillna(0)
         
@@ -47,6 +47,9 @@ class MovieRecommender:
     
     def train(self):
         """Train the hybrid model"""
+        # Create movie_id to index lookup for faster access
+        movie_id_to_idx = {mid: idx for idx, mid in enumerate(self.movies_df['movie_id'])}
+        
         # For each user, create a profile based on their interactions
         for user_id in self.user_item_matrix.index:
             user_ratings = self.user_item_matrix.loc[user_id]
@@ -55,8 +58,7 @@ class MovieRecommender:
             if len(rated_items) > 0:
                 # Create user embedding (average of rated item features)
                 rated_movie_ids = rated_items.index.tolist()
-                movie_indices = [self.movies_df[self.movies_df['movieId'] == mid].index[0] 
-                               for mid in rated_movie_ids if mid in self.movies_df['movieId'].values]
+                movie_indices = [movie_id_to_idx[mid] for mid in rated_movie_ids if mid in movie_id_to_idx]
                 
                 if movie_indices:
                     user_embedding = np.mean(self.item_similarity[movie_indices], axis=0)
@@ -111,7 +113,7 @@ class MovieRecommender:
         # Calculate similarity with all items
         content_scores = {}
         for idx, row in self.movies_df.iterrows():
-            movie_id = row['movieId']
+            movie_id = row['movie_id']
             if movie_id not in rated_items:
                 similarity = user_embedding[idx]
                 content_scores[movie_id] = similarity
@@ -129,7 +131,7 @@ class MovieRecommender:
         
         recommendations = []
         for movie_id, popularity in top_items.items():
-            movie_info = self.movies_df[self.movies_df['movieId'] == movie_id]
+            movie_info = self.movies_df[self.movies_df['movie_id'] == movie_id]
             if not movie_info.empty:
                 recommendations.append({
                     'item_id': int(movie_id),
@@ -143,10 +145,11 @@ class MovieRecommender:
         
         return recommendations
     
-    def recommend(self, user_id, n_recommendations=10, alpha=0.6):
+    def recommend(self, user_id, n_recommendations=10, alpha=0.6, preferred_genres=None):
         """
-        Hybrid recommendation with cold start handling
+        Hybrid recommendation with cold start handling and genre filtering
         alpha: weight for collaborative filtering (1-alpha for content-based)
+        preferred_genres: list of genres to filter by (if provided)
         """
         cf_scores = self.get_collaborative_scores(user_id)
         content_scores = self.get_content_scores(user_id)
@@ -173,13 +176,35 @@ class MovieRecommender:
             content_score = content_scores.get(item, 0)
             hybrid_scores[item] = alpha * cf_score + (1 - alpha) * content_score
         
-        # Get top recommendations
-        top_items = sorted(hybrid_scores.items(), key=lambda x: x[1], reverse=True)[:n_recommendations]
+        # Filter by genre if preferred genres specified
+        if preferred_genres:
+            # Normalize preferred genres
+            preferred_genres_lower = [g.lower().strip() for g in preferred_genres]
+            
+            filtered_scores = {}
+            for movie_id, score in hybrid_scores.items():
+                movie_info = self.movies_df[self.movies_df['movie_id'] == movie_id]
+                if not movie_info.empty:
+                    # Movie genres are pipe-separated: "Action|Adventure|Thriller"
+                    movie_genres = movie_info.iloc[0]['genres'].lower()
+                    movie_genre_list = [g.strip() for g in movie_genres.split('|')]
+                    
+                    # Check if any movie genre matches any preferred genre
+                    if any(mg in preferred_genres_lower for mg in movie_genre_list):
+                        filtered_scores[movie_id] = score
+            
+            hybrid_scores = filtered_scores if filtered_scores else hybrid_scores
+        
+        # Get top recommendations (get more to account for filtering)
+        top_items = sorted(hybrid_scores.items(), key=lambda x: x[1], reverse=True)[:n_recommendations * 2]
         
         # Format recommendations
         recommendations = []
         for movie_id, score in top_items:
-            movie_info = self.movies_df[self.movies_df['movieId'] == movie_id]
+            if len(recommendations) >= n_recommendations:
+                break
+                
+            movie_info = self.movies_df[self.movies_df['movie_id'] == movie_id]
             if not movie_info.empty:
                 recommendations.append({
                     'item_id': int(movie_id),

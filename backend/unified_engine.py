@@ -181,9 +181,10 @@ class UnifiedRecommender:
         self.ranker = lgb.train(params, train_data, num_boost_round=100)
         return self
     
-    def get_unified_recommendations(self, user_id, n_per_domain=5, n_total=20):
+    def get_unified_recommendations(self, user_id, n_per_domain=5, n_total=20, user_preferences=None):
         """
         Get unified recommendations across all domains
+        user_preferences: dict containing user's quiz preferences (favorite_music_genres, favorite_genres, etc.)
         """
         # Build unified profile
         profile = self.build_unified_profile(user_id)
@@ -192,19 +193,55 @@ class UnifiedRecommender:
         all_recommendations = []
         
         if profile['domains']['movies']:
-            movie_recs = self.movie_model.recommend(user_id, n_recommendations=n_per_domain)
+            # Pass favorite movie genres if available
+            preferred_movie_genres = None
+            if user_preferences and 'favorite_genres' in user_preferences:
+                preferred_movie_genres = user_preferences['favorite_genres']
+            
+            movie_recs = self.movie_model.recommend(
+                user_id, 
+                n_recommendations=n_per_domain,
+                preferred_genres=preferred_movie_genres
+            )
             all_recommendations.extend(movie_recs)
         
         if profile['domains']['products']:
-            product_recs = self.product_model.recommend(user_id, n_recommendations=n_per_domain)
+            # Pass shopping categories if available
+            preferred_categories = None
+            if user_preferences and 'shopping_categories' in user_preferences:
+                preferred_categories = user_preferences['shopping_categories']
+            
+            product_recs = self.product_model.recommend(
+                user_id, 
+                n_recommendations=n_per_domain,
+                preferred_categories=preferred_categories
+            )
             all_recommendations.extend(product_recs)
         
         if profile['domains']['music']:
-            music_recs = self.music_model.recommend(user_id, n_recommendations=n_per_domain)
+            # Pass favorite music genres if available
+            preferred_music_genres = None
+            if user_preferences and 'favorite_music_genres' in user_preferences:
+                preferred_music_genres = user_preferences['favorite_music_genres']
+            
+            music_recs = self.music_model.recommend(
+                user_id, 
+                n_recommendations=n_per_domain,
+                preferred_genres=preferred_music_genres
+            )
             all_recommendations.extend(music_recs)
         
         if profile['domains']['courses']:
-            course_recs = self.course_model.recommend(user_id, n_recommendations=n_per_domain)
+            # Pass learning interests if available
+            learning_interests = None
+            if user_preferences and 'learning_interests' in user_preferences:
+                learning_interests = user_preferences['learning_interests']
+            
+            course_recs = self.course_model.recommend(
+                user_id, 
+                n_recommendations=n_per_domain,
+                preferred_topics=learning_interests
+            )
             all_recommendations.extend(course_recs)
         
         # If ranker is trained, use it to re-rank

@@ -21,25 +21,25 @@ def train_all_models():
     print("=" * 80)
     
     # Create models directory
-    os.makedirs('models', exist_ok=True)
+    os.makedirs('../models', exist_ok=True)
     
     # Check if data exists
     data_files = [
-        'data/movies.csv', 'data/ratings.csv',
-        'data/products.csv', 'data/product_reviews.csv',
-        'data/tracks.csv', 'data/listening_history.csv',
-        'data/courses.csv', 'data/enrollments.csv'
+        '../data/movies.csv', '../data/ratings.csv',
+        '../data/products.csv', '../data/product_reviews.csv',
+        '../data/tracks.csv', '../data/listening_history.csv',
+        '../data/courses.csv', '../data/enrollments.csv'
     ]
     
     missing_files = [f for f in data_files if not os.path.exists(f)]
     if missing_files:
-        print("\n❌ ERROR: Missing data files:")
+        print("\nERROR: Missing data files:")
         for f in missing_files:
             print(f"   - {f}")
         print("\nPlease run 'python generate_data.py' first to generate sample data.")
         sys.exit(1)
     
-    print("\n✓ All data files found. Starting training...\n")
+    print("\nAll data files found. Starting training...\n")
     
     # Train Movie Recommender
     print("-" * 80)
@@ -47,9 +47,9 @@ def train_all_models():
     print("-" * 80)
     try:
         movie_model = MovieRecommender()
-        movie_model.prepare_data('data/ratings.csv', 'data/movies.csv')
+        movie_model.prepare_data('../data/ratings.csv', '../data/movies.csv')
         movie_model.train()
-        movie_model.save_model('models/movie_recommender.pkl')
+        movie_model.save_model('../models/movie_recommender.pkl')
         print("✓ Movie recommender trained and saved\n")
     except Exception as e:
         print(f"❌ Error training movie recommender: {e}\n")
@@ -61,9 +61,9 @@ def train_all_models():
     print("-" * 80)
     try:
         product_model = ProductRecommender()
-        product_model.prepare_data('data/product_reviews.csv', 'data/products.csv')
+        product_model.prepare_data('../data/product_reviews.csv', '../data/products.csv')
         product_model.train()
-        product_model.save_model('models/product_recommender.pkl')
+        product_model.save_model('../models/product_recommender.pkl')
         print("✓ Product recommender trained and saved\n")
     except Exception as e:
         print(f"❌ Error training product recommender: {e}\n")
@@ -75,9 +75,9 @@ def train_all_models():
     print("-" * 80)
     try:
         music_model = MusicRecommender(n_components=50)
-        music_model.prepare_data('data/listening_history.csv', 'data/tracks.csv')
+        music_model.prepare_data('../data/listening_history.csv', '../data/tracks.csv')
         music_model.train()
-        music_model.save_model('models/music_recommender.pkl')
+        music_model.save_model('../models/music_recommender.pkl')
         print("✓ Music recommender trained and saved\n")
     except Exception as e:
         print(f"❌ Error training music recommender: {e}\n")
@@ -89,9 +89,9 @@ def train_all_models():
     print("-" * 80)
     try:
         course_model = CourseRecommender()
-        course_model.prepare_data('data/enrollments.csv', 'data/courses.csv')
+        course_model.prepare_data('../data/enrollments.csv', '../data/courses.csv')
         course_model.train()
-        course_model.save_model('models/course_recommender.pkl')
+        course_model.save_model('../models/course_recommender.pkl')
         print("✓ Course recommender trained and saved\n")
     except Exception as e:
         print(f"❌ Error training course recommender: {e}\n")

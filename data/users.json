@@ -29,7 +29,7 @@
         "Music"
       ],
       "experience_level": "intermediate",
-      "budget_range": "low"
+      "budget_range": "high"
     },
     "preferences": {
       "favorite_genres": [
@@ -56,9 +56,141 @@
         "Music"
       ],
       "experience_level": "intermediate",
-      "budget_range": "low"
+      "budget_range": "high"
     },
     "created_at": "2025-11-01T20:06:48.416670",
-    "last_login": "2025-11-01T20:10:10.767657"
+    "last_login": "2025-11-02T01:52:39.592127"
+  },
+  "abhishekupadhyay000@gmail.com": {
+    "email": "abhishekupadhyay000@gmail.com",
+    "password": "$2b$12$3adiW9CEW1Mwa10MRO/OCuLhK3ibDQ9QdUvH/o2eC9TA.UchkbJ2q",
+    "name": "Abhishek Upadhyay",
+    "internal_user_id": 2,
+    "quiz_responses": {
+      "favorite_movie_genres": [
+        "Action",
+        "Horror"
+      ],
+      "favorite_music_genres": [
+        "Indie"
+      ],
+      "shopping_interests": [
+        "Fashion",
+        "Food",
+        "Electronics"
+      ],
+      "learning_topics": [
+        "Programming",
+        "Music"
+      ],
+      "experience_level": "intermediate",
+      "budget_range": "medium"
+    },
+    "preferences": {
+      "favorite_genres": [
+        "Action",
+        "Horror"
+      ],
+      "favorite_music_genres": [
+        "Indie"
+      ],
+      "shopping_categories": [
+        "Fashion",
+        "Food",
+        "Electronics"
+      ],
+      "learning_interests": [
+        "Programming",
+        "Music"
+      ],
+      "experience_level": "intermediate",
+      "budget_range": "medium"
+    },
+    "created_at": "2025-11-02T03:00:21.651929",
+    "last_login": "2025-11-02T10:11:14.597691"
+  },
+  "abhishek@gmail.com": {
+    "email": "abhishek@gmail.com",
+    "password": "$2b$12$11YjU9SInduDr8KM11IjgeXI.vxTffDGhIus/C3ykBoHQuxdSM3xC",
+    "name": "Abhishek",
+    "internal_user_id": 3,
+    "quiz_responses": {
+      "favorite_movie_genres": [
+        "Animation"
+      ],
+      "favorite_music_genres": [
+        "R&B"
+      ],
+      "shopping_interests": [
+        "Toys"
+      ],
+      "learning_topics": [
+        "Programming"
+      ],
+      "experience_level": "intermediate",
+      "budget_range": "medium"
+    },
+    "preferences": {
+      "favorite_genres": [
+        "Animation"
+      ],
+      "favorite_music_genres": [
+        "R&B"
+      ],
+      "shopping_categories": [
+        "Toys"
+      ],
+      "learning_interests": [
+        "Programming"
+      ],
+      "experience_level": "intermediate",
+      "budget_range": "medium"
+    },
+    "created_at": "2025-11-02T10:18:29.969898",
+    "last_login": "2025-11-02T10:18:29.969898"
+  },
+  "yoda@gmail.com": {
+    "email": "yoda@gmail.com",
+    "password": "$2b$12$VTGlQSGleIOUVTE7bp/bq..dNLb/d7dE.SMe5u8WKopHIMEYSQMo.",
+    "name": "lazyyoda",
+    "internal_user_id": 4,
+    "quiz_responses": {
+      "favorite_movie_genres": [
+        "Animation"
+      ],
+      "favorite_music_genres": [
+        "Indie",
+        "Metal"
+      ],
+      "shopping_interests": [
+        "Fashion"
+      ],
+      "learning_topics": [
+        "Programming",
+        "Data Science"
+      ],
+      "experience_level": "beginner",
+      "budget_range": "medium"
+    },
+    "preferences": {
+      "favorite_genres": [
+        "Animation"
+      ],
+      "favorite_music_genres": [
+        "Indie",
+        "Metal"
+      ],
+      "shopping_categories": [
+        "Fashion"
+      ],
+      "learning_interests": [
+        "Data Science",
+        "Programming"
+      ],
+      "experience_level": "beginner",
+      "budget_range": "medium"
+    },
+    "created_at": "2025-11-02T10:50:48.840772",
+    "last_login": "2025-11-02T14:56:51.351514"
   }
 }

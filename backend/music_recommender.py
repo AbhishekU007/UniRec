@@ -24,17 +24,17 @@ class MusicRecommender:
     def prepare_data(self, listening_history_path, tracks_path):
         """
         Load music data
-        listening_history: userId, trackId, playCount, timestamp
-        tracks: trackId, title, artist, album, genre, duration, tempo, energy, valence, etc.
+        listening_history: user_id, track_id, play_count, timestamp
+        tracks: track_id, title, artist, genre, duration, popularity
         """
         history = pd.read_csv(listening_history_path)
         self.tracks_df = pd.read_csv(tracks_path)
         
         # Create user-item matrix (using play counts)
         self.user_item_matrix = history.pivot_table(
-            index='userId',
-            columns='trackId',
-            values='playCount',
+            index='user_id',
+            columns='track_id',
+            values='play_count',
             fill_value=0
         )
         
@@ -69,17 +69,16 @@ class MusicRecommender:
     
     def train(self):
         """Build user profiles based on listening history"""
+        # Create track_id to index lookup for faster access
+        track_id_to_idx = {tid: idx for idx, tid in enumerate(self.tracks_df['track_id'])}
+        
         for user_id in self.user_item_matrix.index:
             user_plays = self.user_item_matrix.loc[user_id]
             played_tracks = user_plays[user_plays > 0]
             
             if len(played_tracks) > 0:
                 played_track_ids = played_tracks.index.tolist()
-                track_indices = [
-                    self.tracks_df[self.tracks_df['trackId'] == tid].index[0]
-                    for tid in played_track_ids
-                    if tid in self.tracks_df['trackId'].values
-                ]
+                track_indices = [track_id_to_idx[tid] for tid in played_track_ids if tid in track_id_to_idx]
                 
                 if track_indices:
                     # Weighted average based on play counts
@@ -95,9 +94,9 @@ class MusicRecommender:
                     # Genre preferences
                     genre_prefs = {}
                     for tid in played_track_ids:
-                        track = self.tracks_df[self.tracks_df['trackId'] == tid]
-                        if not track.empty:
-                            genre = track.iloc[0]['genre']
+                        if tid in track_id_to_idx:
+                            track = self.tracks_df.iloc[track_id_to_idx[tid]]
+                            genre = track['genre']
                             plays = user_plays[tid]
                             if genre in genre_prefs:
                                 genre_prefs[genre] += plays
@@ -107,9 +106,9 @@ class MusicRecommender:
                     # Artist preferences
                     artist_prefs = {}
                     for tid in played_track_ids:
-                        track = self.tracks_df[self.tracks_df['trackId'] == tid]
-                        if not track.empty:
-                            artist = track.iloc[0]['artist']
+                        if tid in track_id_to_idx:
+                            track = self.tracks_df.iloc[track_id_to_idx[tid]]
+                            artist = track['artist']
                             plays = user_plays[tid]
                             if artist in artist_prefs:
                                 artist_prefs[artist] += plays
@@ -172,7 +171,7 @@ class MusicRecommender:
         # Calculate similarity with all tracks
         embedding_scores = {}
         for idx, row in self.tracks_df.iterrows():
-            track_id = row['trackId']
+            track_id = row['track_id']
             if track_id not in played_tracks:
                 track_embedding = self.track_embeddings[idx]
                 similarity = cosine_similarity(
@@ -194,10 +193,11 @@ class MusicRecommender:
         
         return embedding_scores
     
-    def recommend(self, user_id, n_recommendations=10, alpha=0.4):
+    def recommend(self, user_id, n_recommendations=10, alpha=0.4, preferred_genres=None):
         """
-        Hybrid recommendation
+        Hybrid recommendation with genre filtering
         alpha: weight for collaborative filtering
+        preferred_genres: list of genres to filter by (if provided)
         """
         cf_scores = self.get_collaborative_scores(user_id)
         embedding_scores = self.get_embedding_scores(user_id)
@@ -222,12 +222,52 @@ class MusicRecommender:
             emb_score = embedding_scores.get(item, 0)
             hybrid_scores[item] = alpha * cf_score + (1 - alpha) * emb_score
         
+        # Filter by genre if preferred genres specified
+        if preferred_genres:
+            # Genre synonyms mapping - EXACT MATCH ONLY
+            genre_synonyms = {
+                'indie': ['indie', 'alternative'],
+                'alternative': ['indie', 'alternative'],
+                'r&b': ['r&b', 'rnb'],
+                'hip hop': ['hip hop', 'hiphop', 'rap'],
+                'electronic': ['electronic', 'edm', 'dance'],
+                'pop': ['pop'],
+                'rock': ['rock'],
+                'jazz': ['jazz'],
+                'classical': ['classical'],
+                'country': ['country'],
+                'metal': ['metal']
+            }
+            
+            # Normalize preferred genres and expand with synonyms
+            expanded_genres = set()
+            for pref_genre in preferred_genres:
+                pref_lower = pref_genre.lower().strip()
+                if pref_lower in genre_synonyms:
+                    expanded_genres.update(genre_synonyms[pref_lower])
+                else:
+                    expanded_genres.add(pref_lower)
+            
+            filtered_scores = {}
+            for track_id, score in hybrid_scores.items():
+                track = self.tracks_df[self.tracks_df['track_id'] == track_id]
+                if not track.empty:
+                    track_genre = str(track.iloc[0]['genre']).lower().strip()
+                    # EXACT MATCH: Check if track genre exactly matches any preferred genre
+                    if track_genre in expanded_genres:
+                        filtered_scores[track_id] = score
+            
+            hybrid_scores = filtered_scores if filtered_scores else hybrid_scores
+        
         # Get top recommendations
-        top_items = sorted(hybrid_scores.items(), key=lambda x: x[1], reverse=True)[:n_recommendations]
+        top_items = sorted(hybrid_scores.items(), key=lambda x: x[1], reverse=True)[:n_recommendations * 2]  # Get more to account for filtering
         
         recommendations = []
         for track_id, score in top_items:
-            track = self.tracks_df[self.tracks_df['trackId'] == track_id]
+            if len(recommendations) >= n_recommendations:
+                break
+                
+            track = self.tracks_df[self.tracks_df['track_id'] == track_id]
             if not track.empty:
                 t = track.iloc[0]
                 recommendations.append({

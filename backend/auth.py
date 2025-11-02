@@ -128,3 +128,19 @@ class UserManager:
             self._save_users()
             return True
         return False
+    
+    def update_user_preferences(self, email: str, quiz_responses: dict):
+        """Update user's quiz responses and regenerate preferences"""
+        if email not in self.users:
+            return None, "User not found"
+        
+        # Update quiz responses
+        self.users[email]['quiz_responses'] = quiz_responses
+        
+        # Regenerate preferences from quiz responses
+        self.users[email]['preferences'] = self._extract_preferences(quiz_responses)
+        
+        # Save to file
+        self._save_users()
+        
+        return self.users[email]['preferences'], None

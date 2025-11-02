@@ -1,255 +1,125 @@
-# 🧩 UniRec - Unified AI Recommendation Engine
+# **UniRec – Unified AI Recommendation Engine**
 
-> A multi-domain AI-based recommendation system capable of learning user preferences across movies, products, music, and courses, generating intelligent cross-domain insights.
-
-![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
-![React](https://img.shields.io/badge/React-18+-61DAFB.svg)
-![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-009688.svg)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
-
-## 🎯 Features
-
-- **Multi-Domain Intelligence**: Recommendations across 4 domains (Movies, Products, Music, Courses)
-- **Hybrid Recommendation**: Combines Collaborative Filtering + Content-Based + Embedding approaches
-- **Cross-Domain Learning**: Unified user profiles that leverage behavior across all domains
-- **Advanced Ranking**: LightGBM-based ranking layer for optimal recommendations
-- **REST API**: Production-ready FastAPI backend
-- **Modern UI**: Beautiful React frontend with real-time recommendations
-
-## 🏗️ Architecture
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│                    User Interactions                         │
-│         (Movies, Products, Music, Courses)                   │
-└─────────────────┬───────────────────────────────────────────┘
-                  │
-┌─────────────────▼───────────────────────────────────────────┐
-│              Domain-Specific Models                          │
-│  ┌────────┐  ┌─────────┐  ┌───────┐  ┌────────┐           │
-│  │ Movies │  │Products │  │ Music │  │Courses │           │
-│  │  (CF+  │  │   (CF+  │  │(Embed-│  │ (Con-  │           │
-│  │Content)│  │Metadata)│  │ ding) │  │ tent)  │           │
-│  └────────┘  └─────────┘  └───────┘  └────────┘           │
-└─────────────────┬───────────────────────────────────────────┘
-                  │
-┌─────────────────▼───────────────────────────────────────────┐
-│            Unified Profile Engine                            │
-│         (Aggregate Embeddings + Preferences)                 │
-└─────────────────┬───────────────────────────────────────────┘
-                  │
-┌─────────────────▼───────────────────────────────────────────┐
-│          LightGBM Ranking Layer (Optional)                   │
-│              Cross-Domain Feature Fusion                     │
-└─────────────────┬───────────────────────────────────────────┘
-                  │
-┌─────────────────▼───────────────────────────────────────────┐
-│               FastAPI + React Frontend                       │
-└─────────────────────────────────────────────────────────────┘
-```
-
-## 📊 Datasets & Domains
-
-| Domain | Example Dataset | Recommendation Type | Key Features |
-|--------|----------------|-------------------|--------------|
-| 🎬 Movies | MovieLens | Hybrid (CF + Content) | Genre, actors, ratings |
-| 🛒 Products | Amazon Reviews | CF + Metadata | Category, brand, price |
-| 🎵 Music | Million Song / Spotify | Embedding-based | Genre, artist, audio features |
-| 🎓 Courses | Coursera / Udemy | Content-based | Topics, difficulty, skills |
-
-## 🚀 Quick Start
-
-### Prerequisites
-
-- Python 3.8+
-- Node.js 16+
-- pip & npm
-
-### Installation
-
-1. **Clone the repository**
-
-```bash
-git clone https://github.com/yourusername/unirec.git
-cd unirec
-```
-
-2. **Install Python dependencies**
-
-```bash
-pip install -r requirements.txt
-```
-
-3. **Generate sample data**
-
-```bash
-python generate_data.py
-```
-
-This creates synthetic data for all 4 domains in the `data/` directory.
-
-4. **Train all models**
-
-```bash
-python train_all_models.py
-```
-
-This trains all domain-specific models and creates the unified recommender. Models are saved in `models/` directory.
-
-5. **Start the API server**
-
-```bash
-python api.py
-```
-
-API will be available at `http://localhost:8000`
-
-6. **Start the React frontend**
-
-```bash
-cd frontend
-npm install
-npm run dev
-```
-
-Frontend will be available at `http://localhost:3000`
-
-## 📁 Project Structure
-
-```
-unirec/
-├── backend/
-│   ├── movie_recommender.py          # Movie recommendation model
-│   ├── product_recommender.py        # Product recommendation model
-│   ├── music_recommender.py          # Music recommendation model
-│   ├── course_recommender.py         # Course recommendation model
-│   ├── unified_engine.py             # Unified cross-domain engine
-│   ├── api.py                        # FastAPI backend
-│   ├── generate_data.py              # Data generation script
-│   └── train_all_models.py           # Training pipeline
-├── frontend/
-│   └── src/
-│       ├── App.jsx                   # React main component
-│       └── ...
-├── data/                             # Generated datasets
-├── models/                           # Trained model files
-├── requirements.txt                  # Python dependencies
-└── README.md                         # This file
-```
-
-## 🔧 API Endpoints
-
-### Get Unified Recommendations
-```http
-GET /api/recommendations/unified/{user_id}?n_per_domain=5&n_total=20
-```
-
-### Get Domain-Specific Recommendations
-```http
-GET /api/recommendations/{domain}/{user_id}?n_recommendations=10
-```
-Domains: `movies`, `products`, `music`, `courses`
-
-### Get User Profile
-```http
-GET /api/profile/{user_id}
-```
-
-### Get System Stats
-```http
-GET /api/stats
-```
-
-### Search Items
-```http
-GET /api/search/{domain}?query=query_text&limit=20
-```
-
-### Batch Recommendations
-```http
-POST /api/recommendations/batch
-Body: {"user_ids": [1, 2, 3], "n_recommendations": 10}
-```
-
-## 🎨 Frontend Features
-
-- **Domain Switching**: Toggle between unified and domain-specific views
-- **User Profiles**: View cross-domain user engagement
-- **System Stats**: Monitor dataset sizes and model status
-- **Real-time Updates**: Dynamic recommendations with loading states
-- **Responsive Design**: Beautiful UI with Tailwind CSS
-- **Dark Mode**: Modern gradient design
-
-## 🧪 Model Details
-
-### Movie Recommender
-- **Algorithm**: Hybrid (Collaborative Filtering + Content-Based)
-- **Features**: TF-IDF on genres, user-item matrix
-- **Similarity**: Cosine similarity
-
-### Product Recommender
-- **Algorithm**: CF + Metadata-based
-- **Features**: Category, brand, price, TF-IDF on descriptions
-- **Boosting**: Category preference weighting
-
-### Music Recommender
-- **Algorithm**: Embedding-based with audio features
-- **Features**: PCA-reduced audio features (tempo, energy, valence, etc.)
-- **Personalization**: Genre and artist preference tracking
-
-### Course Recommender
-- **Algorithm**: Content-based with skill matching
-- **Features**: TF-IDF on topics/description
-- **Intelligence**: Difficulty progression tracking
-
-### Unified Engine
-- **Algorithm**: Cross-domain profile aggregation + optional LightGBM ranker
-- **Features**: Weighted embedding fusion, cross-domain signals
-- **Innovation**: Learns user preferences holistically
-
-## 📈 Training Pipeline
-
-1. **Data Preparation**: Load and clean domain datasets
-2. **Feature Engineering**: Create TF-IDF, embeddings, user-item matrices
-3. **Model Training**: Train each domain model independently
-4. **Profile Building**: Create unified user profiles
-5. **Ranking (Optional)**: Train LightGBM ranker on interaction data
-6. **Evaluation**: Test recommendations across domains
-
-## 🛠️ Technologies Used
-
-**Backend:**
-- Python 3.8+
-- FastAPI
-- scikit-learn
-- pandas, numpy
-- LightGBM (optional)
-
-**Frontend:**
-- React 18
-- Tailwind CSS
-- Lucide Icons
-- Vite
-
-**ML Techniques:**
-- Collaborative Filtering
-- Content-Based Filtering
-- TF-IDF Vectorization
-- PCA Dimensionality Reduction
-- Cosine Similarity
-- Embedding Fusion
-- Gradient Boosting (LightGBM)
-
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
+Lightweight showcase of a multi-domain recommender that learns as you interact. UniRec serves four domains (movies, products, music, courses) through a FastAPI backend, React frontend, and a reinforcement-learning layer that personalises results in real time.
 
 ---
 
-⭐ If you found this project helpful, please give it a star!
+## **Highlights**
+- **Hybrid modelling** – collaborative filtering + content signals per domain, fused inside a unified engine.
+- **Instant feedback loop** – likes/dislikes, passes, and ratings trigger preference updates and RL score boosts.
+- **Exploration vs exploitation** – epsilon-greedy sampling keeps recommendations fresh while protecting favourites.
+- **Cross-domain profile** – quiz answers, behavioural history, and domain embeddings combine into a single user vector.
+- **User experience** – React SPA with domain tabs, inline feedback buttons, “Learn from actions” shortcut, and toast status.
+
+---
+
+## **System Overview**
+```
+           +----------------------------+
+           |  React Frontend (Vite)     |
+           |  - Auth, domain tabs       |
+           |  - Interaction logging     |
+           +-------------+--------------+
+                    |
+           +-------------v--------------+
+           | FastAPI Backend            |
+           |  Authentication + API      |
+           |  UnifiedEngine + RL boost  |
+           +------+------+--------------+
+                |    |
+      +--------------+    +---------------------+
+      |                                     |
+  +----v----+  +-----------+  +---------+  +---v----+
+  | Movies  |  | Products  |  | Music   |  | Courses|
+  | CF/CB   |  | CF/Meta   |  | Embed   |  | Content|
+  +---------+  +-----------+  +---------+  +--------+
+```
+
+---
+
+## **Key Mechanics**
+
+**Domain models**
+- *Movies*: hybrid CF + TF-IDF on genres/crew metadata.
+- *Products*: purchases + text embeddings, category weighting.
+- *Music*: listening matrix + PCA-reduced audio descriptors.
+- *Courses*: topic TF-IDF, difficulty progression, RL-aware topic rebalance.
+
+**Unified engine**
+- Builds user embeddings per domain, aggregates into a cross-domain profile, optionally re-ranks with LightGBM.
+
+**Reinforcement Learning**
+- Interaction tracker stores all events in `data/interactions.json`.
+- Weighted scores: like (+0.8), dislike (-0.8), purchase/enrol (+1.0), pass (-0.3), etc.
+- `InteractionTracker.apply_reinforcement_boost` shifts ranking immediately; recent likes also adjust the topic quotas inside the course recommender so loved topics replace lower-interest ones next refresh.
+
+---
+
+## **Running the Project**
+1. **Install deps**
+  ```bash
+  pip install -r requirements.txt
+  cd frontend && npm install && cd ..
+  ```
+2. **Generate sample data & train models**
+  ```bash
+  python backend/generate_data.py
+  python backend/train_all_models.py
+  ```
+3. **Serve backend**
+  ```bash
+  cd backend
+  python api.py  # http://localhost:8000
+  ```
+4. **Serve frontend**
+  ```bash
+  cd frontend
+  npm run dev    # http://localhost:3000
+  ```
+
+Credentials and seed users live in `data/users.json`. All models are persisted under `models/`.
+
+---
+
+## **APIs to Know**
+- `GET /api/recommendations/unified?n_per_domain=10` – default endpoint used by the UI.
+- `GET /api/recommendations/courses/{user}?n_recommendations=15` – course recommender with RL topic balancing.
+- `POST /api/interactions/log` – capture like/dislike/pass/ratings events.
+- `POST /api/preferences/update-from-interactions` – “Learn from Actions” button triggers this.
+- `GET /api/interactions/stats` – quick dashboards for presentations.
+
+Swagger/OpenAPI docs: `http://localhost:8000/docs`.
+
+---
+
+## **Frontend Walkthrough**
+- **Unified tab** bundles all domains, annotated with RL boosts when applicable.
+- **Domain tabs** (movies/products/music/courses) call their respective APIs; the course tab now shows all Programming + Data Science items, heavily reordered by recent feedback.
+- **Cards** expose like/dislike/pass actions, star ratings, and a detail modal.
+- **Learn from Actions** replays interactions for the tracker, updates stored preferences, and calls `fetchRecommendations` so the new order is visible immediately.
+
+---
+
+## **Testing & Demo Tips**
+- `python backend/check_status.py` sanity-checks models, data, and API ports.
+- To demonstrate RL: like the three Data Science courses, hit “Learn from Actions”, and reload – the course list should alternate Data Science and Programming entries with visible score boosts.
+- Sample cURL for logs:
+  ```bash
+  curl -X POST http://localhost:8000/api/interactions/log \
+     -H "Content-Type: application/json" \
+     -d '{"user_id":4,"item_id":66,"domain":"courses","action_type":"like"}'
+  ```
+
+---
+
+## **Tech Stack**
+- **Backend**: FastAPI, pandas/numpy, scikit-learn, LightGBM (optional).
+- **Frontend**: React 18, Vite, Tailwind, Lucide icons.
+- **Tooling**: Python 3.11 virtualenv, Node 18, GitHub-style project layout.
+
+---
+
+## **License & Attribution**
+MIT License. Generated datasets are synthetic; swap in your own CSVs via `backend/generate_data.py` if needed.
+
+Enjoy the project, and feel free to tailor it for demos or coursework submissions! ⭐

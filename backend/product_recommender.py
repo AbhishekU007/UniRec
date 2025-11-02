@@ -25,13 +25,13 @@ class ProductRecommender:
         self.products_df = pd.read_csv(products_path)
         
         # Ensure we have required columns
-        # Expected: userId, productId, rating, timestamp
-        # Products: productId, title, category, brand, price
+        # Expected: user_id, product_id, rating, timestamp
+        # Products: product_id, title, category, brand, price
         
         # Create user-item matrix
         self.user_item_matrix = reviews.pivot_table(
-            index='userId',
-            columns='productId',
+            index='user_id',
+            columns='product_id',
             values='rating'
         ).fillna(0)
         
@@ -57,17 +57,16 @@ class ProductRecommender:
     
     def train(self):
         """Train the model and create user profiles"""
+        # Create product_id to index lookup for faster access
+        product_id_to_idx = {pid: idx for idx, pid in enumerate(self.products_df['product_id'])}
+        
         for user_id in self.user_item_matrix.index:
             user_ratings = self.user_item_matrix.loc[user_id]
             rated_items = user_ratings[user_ratings > 0]
             
             if len(rated_items) > 0:
                 rated_product_ids = rated_items.index.tolist()
-                product_indices = [
-                    self.products_df[self.products_df['productId'] == pid].index[0]
-                    for pid in rated_product_ids 
-                    if pid in self.products_df['productId'].values
-                ]
+                product_indices = [product_id_to_idx[pid] for pid in rated_product_ids if pid in product_id_to_idx]
                 
                 if product_indices:
                     # User embedding from purchased/rated products
@@ -76,9 +75,9 @@ class ProductRecommender:
                     # Calculate category preferences
                     category_prefs = {}
                     for pid in rated_product_ids:
-                        product = self.products_df[self.products_df['productId'] == pid]
-                        if not product.empty:
-                            category = product.iloc[0]['category']
+                        if pid in product_id_to_idx:
+                            product = self.products_df.iloc[product_id_to_idx[pid]]
+                            category = product['category']
                             rating = user_ratings[pid]
                             if category in category_prefs:
                                 category_prefs[category].append(rating)
@@ -139,7 +138,7 @@ class ProductRecommender:
         
         content_scores = {}
         for idx, row in self.products_df.iterrows():
-            product_id = row['productId']
+            product_id = row['product_id']
             if product_id not in rated_items:
                 # Base similarity score
                 similarity = user_embedding[idx]
@@ -152,10 +151,11 @@ class ProductRecommender:
         
         return content_scores
     
-    def recommend(self, user_id, n_recommendations=10, alpha=0.5):
+    def recommend(self, user_id, n_recommendations=10, alpha=0.5, preferred_categories=None):
         """
-        Hybrid recommendation
+        Hybrid recommendation with category filtering
         alpha: weight for collaborative filtering
+        preferred_categories: list of categories to filter by (if provided)
         """
         cf_scores = self.get_collaborative_scores(user_id)
         content_scores = self.get_content_scores(user_id)
@@ -178,12 +178,31 @@ class ProductRecommender:
             content_score = content_scores.get(item, 0)
             hybrid_scores[item] = alpha * cf_score + (1 - alpha) * content_score
         
-        # Get top recommendations
-        top_items = sorted(hybrid_scores.items(), key=lambda x: x[1], reverse=True)[:n_recommendations]
+        # Filter by category if preferred categories specified
+        if preferred_categories:
+            # Normalize preferred categories
+            preferred_categories_lower = [c.lower().strip() for c in preferred_categories]
+            
+            filtered_scores = {}
+            for product_id, score in hybrid_scores.items():
+                product = self.products_df[self.products_df['product_id'] == product_id]
+                if not product.empty:
+                    product_category = str(product.iloc[0]['category']).lower().strip()
+                    # EXACT MATCH: Check if product category exactly matches any preferred category
+                    if product_category in preferred_categories_lower:
+                        filtered_scores[product_id] = score
+            
+            hybrid_scores = filtered_scores if filtered_scores else hybrid_scores
+        
+        # Get top recommendations (get more to account for filtering)
+        top_items = sorted(hybrid_scores.items(), key=lambda x: x[1], reverse=True)[:n_recommendations * 2]
         
         recommendations = []
         for product_id, score in top_items:
-            product = self.products_df[self.products_df['productId'] == product_id]
+            if len(recommendations) >= n_recommendations:
+                break
+                
+            product = self.products_df[self.products_df['product_id'] == product_id]
             if not product.empty:
                 p = product.iloc[0]
                 recommendations.append({
