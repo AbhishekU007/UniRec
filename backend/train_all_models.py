@@ -20,8 +20,14 @@ def train_all_models():
     print("UniRec - Model Training Pipeline")
     print("=" * 80)
     
+    # Determine project root and models directory
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    project_root = os.path.dirname(script_dir)
+    models_dir = os.path.join(project_root, 'models')
+    
     # Create models directory
-    os.makedirs('../models', exist_ok=True)
+    os.makedirs(models_dir, exist_ok=True)
+    print(f"📁 Models will be saved to: {models_dir}")
     
     # Check if data exists
     data_files = [
@@ -49,7 +55,7 @@ def train_all_models():
         movie_model = MovieRecommender()
         movie_model.prepare_data('../data/ratings.csv', '../data/movies.csv')
         movie_model.train()
-        movie_model.save_model('../models/movie_recommender.pkl')
+        movie_model.save_model(os.path.join(models_dir, 'movie_recommender.pkl'))
         print("✓ Movie recommender trained and saved\n")
     except Exception as e:
         print(f"❌ Error training movie recommender: {e}\n")
@@ -63,7 +69,7 @@ def train_all_models():
         product_model = ProductRecommender()
         product_model.prepare_data('../data/product_reviews.csv', '../data/products.csv')
         product_model.train()
-        product_model.save_model('../models/product_recommender.pkl')
+        product_model.save_model(os.path.join(models_dir, 'product_recommender.pkl'))
         print("✓ Product recommender trained and saved\n")
     except Exception as e:
         print(f"❌ Error training product recommender: {e}\n")
@@ -77,7 +83,7 @@ def train_all_models():
         music_model = MusicRecommender(n_components=50)
         music_model.prepare_data('../data/listening_history.csv', '../data/tracks.csv')
         music_model.train()
-        music_model.save_model('../models/music_recommender.pkl')
+        music_model.save_model(os.path.join(models_dir, 'music_recommender.pkl'))
         print("✓ Music recommender trained and saved\n")
     except Exception as e:
         print(f"❌ Error training music recommender: {e}\n")
@@ -91,7 +97,7 @@ def train_all_models():
         course_model = CourseRecommender()
         course_model.prepare_data('../data/enrollments.csv', '../data/courses.csv')
         course_model.train()
-        course_model.save_model('../models/course_recommender.pkl')
+        course_model.save_model(os.path.join(models_dir, 'course_recommender.pkl'))
         print("✓ Course recommender trained and saved\n")
     except Exception as e:
         print(f"❌ Error training course recommender: {e}\n")
