@@ -106,21 +106,27 @@ class PreferenceUpdateRequest(BaseModel):
 async def load_models():
     """Load all trained models on startup"""
     try:
-        # Check multiple possible model paths
+        # Determine models directory based on current working directory
+        # When uvicorn runs from backend/, models are at ../models/
+        # When uvicorn runs from root, models are at models/
         current_dir = os.path.dirname(os.path.abspath(__file__))
+        project_root = os.path.dirname(current_dir)  # Parent of backend/
+        
         possible_paths = [
-            '../models/',  # When running from backend/
-            'models/',     # When running from root
-            os.path.join(current_dir, '../models/'),  # Absolute path from backend
-            '/opt/render/project/src/models/',  # Render deployment path
+            os.path.join(project_root, 'models'),  # Most reliable: /path/to/project/models
+            '../models',  # Relative from backend/
+            'models',     # If running from root
         ]
         
         models_dir = None
         for path in possible_paths:
             full_path = os.path.abspath(path)
-            if os.path.exists(full_path) and os.path.exists(os.path.join(full_path, 'movie_recommender.pkl')):
-                models_dir = full_path
-                break
+            if os.path.exists(full_path):
+                # Check if it has model files
+                pkl_files = [f for f in os.listdir(full_path) if f.endswith('.pkl')]
+                if pkl_files:
+                    models_dir = full_path
+                    break
         
         if not models_dir:
             print("❌ Models directory not found!")
